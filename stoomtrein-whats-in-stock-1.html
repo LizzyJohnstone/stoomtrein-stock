@@ -1,0 +1,2224 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Stoomtrein Vapers — What's In Stock</title>
+<style>
+:root { --bg:#f5f5f5; --ink:#171717; --muted:#6d6d6d; --card:#fff; --line:#e3e3e3; --accent:#111; }
+* { box-sizing:border-box; }
+body { margin:0; font-family:Arial,Helvetica,sans-serif; background:var(--bg); color:var(--ink); }
+header { background:#111; color:#fff; padding:28px 18px 24px; text-align:center; }
+header h1 { margin:0 0 6px; font-size:30px; letter-spacing:.5px; }
+header p { margin:0; color:#ddd; }
+.wrap { max-width:1100px; margin:auto; padding:18px; }
+.controls { display:flex; gap:10px; flex-wrap:wrap; margin:0 0 18px; }
+input,select { flex:1; min-width:200px; padding:13px 14px; border:1px solid #ccc; border-radius:10px; background:#fff; font-size:15px; }
+.summary { color:var(--muted); margin:4px 0 16px; font-size:14px; }
+.grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(230px,1fr)); gap:15px; }
+.card { background:var(--card); border:1px solid var(--line); border-radius:15px; overflow:hidden; box-shadow:0 2px 10px rgba(0,0,0,.05); }
+.photo { height:150px; background:#f0f0f0; display:flex; align-items:center; justify-content:center; overflow:hidden; }
+.photo img { width:100%; height:100%; object-fit:contain; background:#fff; }
+.placeholder { font-size:44px; opacity:.6; }
+.body { padding:15px; }
+.category { text-transform:uppercase; letter-spacing:.7px; font-size:11px; color:var(--muted); margin-bottom:6px; }
+h3 { margin:0 0 7px; font-size:17px; line-height:1.25; }
+.flavours { font-size:12px; color:#666; min-height:16px; margin-bottom:12px; }
+.bottom { display:flex; justify-content:space-between; align-items:center; gap:8px; }
+.bottom strong { font-size:18px; }
+.status { font-size:11px; font-weight:700; padding:7px 9px; border-radius:999px; }
+.status.in { background:#e7f6ea; color:#1b6b2a; }
+.status.out { background:#fbe8e8; color:#a01e1e; }
+.note { background:#fff; border:1px solid var(--line); border-radius:12px; padding:13px 15px; margin-bottom:18px; color:#555; font-size:13px; }
+footer { text-align:center; color:#777; font-size:12px; padding:28px 10px; }
+.hidden { display:none; }
+</style>
+</head>
+<body>
+<header>
+  <h1>🚂 STOOMTREIN VAPERS</h1>
+  <p>What's In Stock</p>
+</header>
+<div class="wrap">
+  <div class="note">Stock shown here is based on the latest Yoco stock export. Availability should be confirmed with the shop before travelling.</div>
+  <div class="controls">
+    <input id="search" type="search" placeholder="Search products or flavours...">
+    <select id="category"><option value="">All categories</option><option value="Coils">Coils</option><option value="Disposable">Disposable</option><option value="Freebase">Freebase</option><option value="Other">Other</option><option value="Pod system">Pod system</option></select>
+    <select id="status"><option value="">All stock</option><option value="in">In Stock</option><option value="out">Out of Stock</option></select>
+  </div>
+  <div class="summary" id="summary"></div>
+  <div class="grid" id="grid">
+    <article class="card" data-name="airpen 0.8 ohm "
+             data-category="Coils"
+             data-status="in">
+      <div class="photo"><div class="placeholder">🚂</div></div>
+      <div class="body">
+        <div class="category">Coils</div>
+        <h3>Airpen 0.8 ohm</h3>
+        
+        <div class="bottom">
+          <strong>R70</strong>
+          <span class="status in">In Stock</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="card" data-name="airpen 1.0 ohm "
+             data-category="Coils"
+             data-status="out">
+      <div class="photo"><div class="placeholder">🚂</div></div>
+      <div class="body">
+        <div class="category">Coils</div>
+        <h3>Airpen 1.0 ohm</h3>
+        
+        <div class="bottom">
+          <strong>R70</strong>
+          <span class="status out">Out of Stock</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="card" data-name="eco nano 0.6 ohm "
+             data-category="Coils"
+             data-status="out">
+      <div class="photo"><div class="placeholder">🚂</div></div>
+      <div class="body">
+        <div class="category">Coils</div>
+        <h3>Eco nano 0.6 ohm</h3>
+        
+        <div class="bottom">
+          <strong>R70</strong>
+          <span class="status out">Out of Stock</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="card" data-name="eco nano 0.8 ohm "
+             data-category="Coils"
+             data-status="out">
+      <div class="photo"><div class="placeholder">🚂</div></div>
+      <div class="body">
+        <div class="category">Coils</div>
+        <h3>Eco nano 0.8 ohm</h3>
+        
+        <div class="bottom">
+          <strong>R70</strong>
+          <span class="status out">Out of Stock</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="card" data-name="gpp 0.4 ohm "
+             data-category="Coils"
+             data-status="in">
+      <div class="photo"><div class="placeholder">🚂</div></div>
+      <div class="body">
+        <div class="category">Coils</div>
+        <h3>GPP 0.4 ohm</h3>
+        
+        <div class="bottom">
+          <strong>R70</strong>
+          <span class="status in">In Stock</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="card" data-name="gpp 0.6 ohm "
+             data-category="Coils"
+             data-status="in">
+      <div class="photo"><div class="placeholder">🚂</div></div>
+      <div class="body">
+        <div class="category">Coils</div>
+        <h3>GPP 0.6 ohm</h3>
+        
+        <div class="bottom">
+          <strong>R70</strong>
+          <span class="status in">In Stock</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="card" data-name="luxe x 0.6 ohm "
+             data-category="Coils"
+             data-status="in">
+      <div class="photo"><div class="placeholder">🚂</div></div>
+      <div class="body">
+        <div class="category">Coils</div>
+        <h3>Luxe x 0.6 ohm</h3>
+        
+        <div class="bottom">
+          <strong>R70</strong>
+          <span class="status in">In Stock</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="card" data-name="luxe x 0.8 ohm "
+             data-category="Coils"
+             data-status="out">
+      <div class="photo"><div class="placeholder">🚂</div></div>
+      <div class="body">
+        <div class="category">Coils</div>
+        <h3>Luxe x 0.8 ohm</h3>
+        
+        <div class="bottom">
+          <strong>R70</strong>
+          <span class="status out">Out of Stock</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="card" data-name="q pod 0.6 ohm "
+             data-category="Coils"
+             data-status="in">
+      <div class="photo"><div class="placeholder">🚂</div></div>
+      <div class="body">
+        <div class="category">Coils</div>
+        <h3>Q pod 0.6 ohm</h3>
+        
+        <div class="bottom">
+          <strong>R70</strong>
+          <span class="status in">In Stock</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="card" data-name="q pod 0.8 ohm "
+             data-category="Coils"
+             data-status="out">
+      <div class="photo"><div class="placeholder">🚂</div></div>
+      <div class="body">
+        <div class="category">Coils</div>
+        <h3>Q pod 0.8 ohm</h3>
+        
+        <div class="bottom">
+          <strong>R70</strong>
+          <span class="status out">Out of Stock</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="card" data-name="rpm2 0.16 ohm "
+             data-category="Coils"
+             data-status="in">
+      <div class="photo"><div class="placeholder">🚂</div></div>
+      <div class="body">
+        <div class="category">Coils</div>
+        <h3>RPM2 0.16 ohm</h3>
+        
+        <div class="bottom">
+          <strong>R70</strong>
+          <span class="status in">In Stock</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="card" data-name="rpm2 0.23 ohm "
+             data-category="Coils"
+             data-status="in">
+      <div class="photo"><div class="placeholder">🚂</div></div>
+      <div class="body">
+        <div class="category">Coils</div>
+        <h3>RPM2 0.23 ohm</h3>
+        
+        <div class="bottom">
+          <strong>R70</strong>
+          <span class="status in">In Stock</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="card" data-name="smart 0.4 ohm "
+             data-category="Coils"
+             data-status="in">
+      <div class="photo"><div class="placeholder">🚂</div></div>
+      <div class="body">
+        <div class="category">Coils</div>
+        <h3>Smart 0.4 ohm</h3>
+        
+        <div class="bottom">
+          <strong>R70</strong>
+          <span class="status in">In Stock</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="card" data-name="smart 0.6 ohm "
+             data-category="Coils"
+             data-status="out">
+      <div class="photo"><div class="placeholder">🚂</div></div>
+      <div class="body">
+        <div class="category">Coils</div>
+        <h3>Smart 0.6 ohm</h3>
+        
+        <div class="bottom">
+          <strong>R70</strong>
+          <span class="status out">Out of Stock</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="card" data-name="smart 0.8 ohm "
+             data-category="Coils"
+             data-status="out">
+      <div class="photo"><div class="placeholder">🚂</div></div>
+      <div class="body">
+        <div class="category">Coils</div>
+        <h3>Smart 0.8 ohm</h3>
+        
+        <div class="bottom">
+          <strong>R70</strong>
+          <span class="status out">Out of Stock</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="card" data-name="smok novo pod "
+             data-category="Coils"
+             data-status="in">
+      <div class="photo"><div class="placeholder">🚂</div></div>
+      <div class="body">
+        <div class="category">Coils</div>
+        <h3>Smok novo pod</h3>
+        
+        <div class="bottom">
+          <strong>R70</strong>
+          <span class="status in">In Stock</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="card" data-name="tugboat coil 0.6 ohm "
+             data-category="Coils"
+             data-status="in">
+      <div class="photo"><div class="placeholder">🚂</div></div>
+      <div class="body">
+        <div class="category">Coils</div>
+        <h3>tugboat coil 0.6 ohm</h3>
+        
+        <div class="bottom">
+          <strong>R70</strong>
+          <span class="status in">In Stock</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="card" data-name="vgod 0.6 ohm "
+             data-category="Coils"
+             data-status="in">
+      <div class="photo"><div class="placeholder">🚂</div></div>
+      <div class="body">
+        <div class="category">Coils</div>
+        <h3>VGOD 0.6 ohm</h3>
+        
+        <div class="bottom">
+          <strong>R70</strong>
+          <span class="status in">In Stock</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="card" data-name="vgod 0.8 ohm "
+             data-category="Coils"
+             data-status="out">
+      <div class="photo"><div class="placeholder">🚂</div></div>
+      <div class="body">
+        <div class="category">Coils</div>
+        <h3>VGOD 0.8 ohm</h3>
+        
+        <div class="bottom">
+          <strong>R70</strong>
+          <span class="status out">Out of Stock</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="card" data-name="xros 0.4 ohm "
+             data-category="Coils"
+             data-status="out">
+      <div class="photo"><div class="placeholder">🚂</div></div>
+      <div class="body">
+        <div class="category">Coils</div>
+        <h3>Xros 0.4 ohm</h3>
+        
+        <div class="bottom">
+          <strong>R70</strong>
+          <span class="status out">Out of Stock</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="card" data-name="xros 0.6 ohm "
+             data-category="Coils"
+             data-status="out">
+      <div class="photo"><div class="placeholder">🚂</div></div>
+      <div class="body">
+        <div class="category">Coils</div>
+        <h3>Xros 0.6 ohm</h3>
+        
+        <div class="bottom">
+          <strong>R70</strong>
+          <span class="status out">Out of Stock</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="card" data-name="xros 0.8 ohm "
+             data-category="Coils"
+             data-status="in">
+      <div class="photo"><div class="placeholder">🚂</div></div>
+      <div class="body">
+        <div class="category">Coils</div>
+        <h3>Xros 0.8 ohm</h3>
+        
+        <div class="bottom">
+          <strong>R70</strong>
+          <span class="status in">In Stock</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="card" data-name="elfbar 18k blueberry razz lemon, strawberry grape, cherry peach lemonade, cranberry, peach ice"
+             data-category="Disposable"
+             data-status="out">
+      <div class="photo"><div class="placeholder">🚂</div></div>
+      <div class="body">
+        <div class="category">Disposable</div>
+        <h3>Elfbar 18k</h3>
+        <div class="flavours">Blueberry razz lemon, Strawberry grape, Cherry peach lemonade, Cranberry, Peach ice</div>
+        <div class="bottom">
+          <strong>R340</strong>
+          <span class="status out">Out of Stock</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="card" data-name="cosmic dropz freebase galactic grape, cherbet ice"
+             data-category="Freebase"
+             data-status="out">
+      <div class="photo"><div class="placeholder">🚂</div></div>
+      <div class="body">
+        <div class="category">Freebase</div>
+        <h3>Cosmic dropz freebase</h3>
+        <div class="flavours">Galactic grape, Cherbet ice</div>
+        <div class="bottom">
+          <strong>R280</strong>
+          <span class="status out">Out of Stock</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="card" data-name="jel freebase flip, nectar, arabica latte, royal dluxe, nutty arabica dunked edition, papaya, nutty crunchy cookie"
+             data-category="Freebase"
+             data-status="out">
+      <div class="photo"><div class="placeholder">🚂</div></div>
+      <div class="body">
+        <div class="category">Freebase</div>
+        <h3>JEL Freebase</h3>
+        <div class="flavours">Flip, Nectar, Arabica latte, Royal dluxe, Nutty arabica dunked edition, Papaya, Nutty crunchy cookie</div>
+        <div class="bottom">
+          <strong>R400</strong>
+          <span class="status out">Out of Stock</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="card" data-name="moist freebase lush litchi, gushing grape, pumpin peach, kinky kiwi, crushin grape, bouncing berry, razzle raspberry"
+             data-category="Freebase"
+             data-status="in">
+      <div class="photo"><div class="placeholder">🚂</div></div>
+      <div class="body">
+        <div class="category">Freebase</div>
+        <h3>Moist freebase</h3>
+        <div class="flavours">Lush litchi, Gushing grape, Pumpin peach, Kinky kiwi, Crushin grape, Bouncing berry, Razzle raspberry</div>
+        <div class="bottom">
+          <strong>R290</strong>
+          <span class="status in">In Stock</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="card" data-name="ndulge freebase custard vandetta, watermelon lush, mango cardinal, pineapple trivia, zesty zen, peach paradise"
+             data-category="Freebase"
+             data-status="out">
+      <div class="photo"><div class="placeholder">🚂</div></div>
+      <div class="body">
+        <div class="category">Freebase</div>
+        <h3>Ndulge freebase</h3>
+        <div class="flavours">Custard vandetta, Watermelon lush, Mango cardinal, Pineapple trivia, Zesty zen, Peach paradise</div>
+        <div class="bottom">
+          <strong>R300</strong>
+          <span class="status out">Out of Stock</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="card" data-name="polar popz freebase tropical berry, passion fruit pineapple and strawberry, raspberry twist"
+             data-category="Freebase"
+             data-status="out">
+      <div class="photo"><div class="placeholder">🚂</div></div>
+      <div class="body">
+        <div class="category">Freebase</div>
+        <h3>Polar popz Freebase</h3>
+        <div class="flavours">Tropical berry, Passion fruit pineapple and strawberry, Raspberry twist</div>
+        <div class="bottom">
+          <strong>R280</strong>
+          <span class="status out">Out of Stock</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="card" data-name="snow cone freebase summer time, tigers blood"
+             data-category="Freebase"
+             data-status="in">
+      <div class="photo"><div class="placeholder">🚂</div></div>
+      <div class="body">
+        <div class="category">Freebase</div>
+        <h3>Snow cone Freebase</h3>
+        <div class="flavours">Summer time, Tigers blood</div>
+        <div class="bottom">
+          <strong>R340</strong>
+          <span class="status in">In Stock</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="card" data-name="3rd world flavor nic salt strawberry kiwi cooler, apple cranberry cooler, lytchi freezo, strawberry freezo"
+             data-category="Other"
+             data-status="out">
+      <div class="photo"><div class="placeholder">🚂</div></div>
+      <div class="body">
+        <div class="category">Other</div>
+        <h3>3rd world flavor nic salt</h3>
+        <div class="flavours">Strawberry kiwi cooler, Apple cranberry cooler, Lytchi freezo, Strawberry freezo</div>
+        <div class="bottom">
+          <strong>R300</strong>
+          <span class="status out">Out of Stock</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="card" data-name="armour series g pod "
+             data-category="Other"
+             data-status="in">
+      <div class="photo"><div class="placeholder">🚂</div></div>
+      <div class="body">
+        <div class="category">Other</div>
+        <h3>Armour series G pod</h3>
+        
+        <div class="bottom">
+          <strong>R70</strong>
+          <span class="status in">In Stock</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="card" data-name="asalted nectarine knockout, moondrops on ice, stone fruit riot"
+             data-category="Other"
+             data-status="in">
+      <div class="photo"><div class="placeholder">🚂</div></div>
+      <div class="body">
+        <div class="category">Other</div>
+        <h3>Asalted</h3>
+        <div class="flavours">Nectarine Knockout, Moondrops on ice, Stone fruit Riot</div>
+        <div class="bottom">
+          <strong>R240</strong>
+          <span class="status in">In Stock</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="card" data-name="b coils 0.2 "
+             data-category="Other"
+             data-status="in">
+      <div class="photo"><div class="placeholder">🚂</div></div>
+      <div class="body">
+        <div class="category">Other</div>
+        <h3>B coils 0.2</h3>
+        
+        <div class="bottom">
+          <strong>R70</strong>
+          <span class="status in">In Stock</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="card" data-name="b coils 0.6 "
+             data-category="Other"
+             data-status="in">
+      <div class="photo"><div class="placeholder">🚂</div></div>
+      <div class="body">
+        <div class="category">Other</div>
+        <h3>B coils 0.6</h3>
+        
+        <div class="bottom">
+          <strong>R70</strong>
+          <span class="status in">In Stock</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="card" data-name="bard nic salt tropical fruits, blueberry cotton candy, strawberry lime, gummy grape, mixed berry, berry grape, berry blast, gummy bear, bubblegum ice, strawberry raspberry cherry, fuji, aloe grape, triple mango ice, banana ice, grape blackcurrant, energy ice, lemon ice"
+             data-category="Other"
+             data-status="in">
+      <div class="photo"><div class="placeholder">🚂</div></div>
+      <div class="body">
+        <div class="category">Other</div>
+        <h3>Bard nic salt</h3>
+        <div class="flavours">Tropical Fruits, Blueberry Cotton Candy, Strawberry Lime, Gummy Grape, Mixed berry, Berry grape, Berry blast, Gummy bear, Bubblegum ice, Strawberry raspberry cherry, Fuji, Aloe grape, Triple mango ice, Banana ice, Grape blackcurrant, Energy ice, Lemon ice</div>
+        <div class="bottom">
+          <strong>R250</strong>
+          <span class="status in">In Stock</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="card" data-name="bewolk smart juice 60ml frozen mango, tropicle sparkle, candy watermelon strawberry, gummi burst, orange creamsicle, wicks candy"
+             data-category="Other"
+             data-status="out">
+      <div class="photo"><div class="placeholder">🚂</div></div>
+      <div class="body">
+        <div class="category">Other</div>
+        <h3>Bewolk Smart Juice 60ml</h3>
+        <div class="flavours">Frozen Mango, Tropicle Sparkle, Candy Watermelon Strawberry, Gummi Burst, Orange Creamsicle, Wicks Candy</div>
+        <div class="bottom">
+          <strong>R310</strong>
+          <span class="status out">Out of Stock</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="card" data-name="bewolk zimo peppermint, mint, citrus, mango, watermelon"
+             data-category="Other"
+             data-status="in">
+      <div class="photo"><div class="placeholder">🚂</div></div>
+      <div class="body">
+        <div class="category">Other</div>
+        <h3>Bewolk Zimo</h3>
+        <div class="flavours">Peppermint, Mint, Citrus, Mango, Watermelon</div>
+        <div class="bottom">
+          <strong>R85</strong>
+          <span class="status in">In Stock</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="card" data-name="black nic salt blackcurrant and litchi, blackcurrant and mango, blackcurrant slurpee"
+             data-category="Other"
+             data-status="out">
+      <div class="photo"><div class="placeholder">🚂</div></div>
+      <div class="body">
+        <div class="category">Other</div>
+        <h3>Black nic salt</h3>
+        <div class="flavours">Blackcurrant and litchi, Blackcurrant and mango, Blackcurrant slurpee</div>
+        <div class="bottom">
+          <strong>R270</strong>
+          <span class="status out">Out of Stock</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="card" data-name="bombay crush nic salt 60ml "
+             data-category="Other"
+             data-status="out">
+      <div class="photo"><div class="placeholder">🚂</div></div>
+      <div class="body">
+        <div class="category">Other</div>
+        <h3>Bombay Crush nic salt 60ml</h3>
+        
+        <div class="bottom">
+          <strong>R270</strong>
+          <span class="status out">Out of Stock</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="card" data-name="caliburn air shocking green, pink, light blue, silver, orange, green"
+             data-category="Other"
+             data-status="in">
+      <div class="photo"><div class="placeholder">🚂</div></div>
+      <div class="body">
+        <div class="category">Other</div>
+        <h3>Caliburn Air</h3>
+        <div class="flavours">Shocking Green, Pink, Light Blue, Silver, Orange, green</div>
+        <div class="bottom">
+          <strong>R200</strong>
+          <span class="status in">In Stock</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="card" data-name="caliburn g5 lite grey, black, blue, pink, green"
+             data-category="Other"
+             data-status="out">
+      <div class="photo"><div class="placeholder">🚂</div></div>
+      <div class="body">
+        <div class="category">Other</div>
+        <h3>Caliburn G5 Lite</h3>
+        <div class="flavours">Grey, Black, Blue, Pink, Green</div>
+        <div class="bottom">
+          <strong>R280</strong>
+          <span class="status out">Out of Stock</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="card" data-name="coke 440ml "
+             data-category="Other"
+             data-status="in">
+      <div class="photo"><div class="placeholder">🚂</div></div>
+      <div class="body">
+        <div class="category">Other</div>
+        <h3>Coke 440ml</h3>
+        
+        <div class="bottom">
+          <strong>R15</strong>
+          <span class="status in">In Stock</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="card" data-name="cosmic dropz nic salts cherbet"
+             data-category="Other"
+             data-status="out">
+      <div class="photo"><div class="placeholder">🚂</div></div>
+      <div class="body">
+        <div class="category">Other</div>
+        <h3>Cosmic dropz nic salts</h3>
+        <div class="flavours">Cherbet</div>
+        <div class="bottom">
+          <strong>R300</strong>
+          <span class="status out">Out of Stock</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="card" data-name="craft vapor nic salt 60ml lychee mango, watermelon on the rocks, wixx, iced mango"
+             data-category="Other"
+             data-status="in">
+      <div class="photo"><div class="placeholder">🚂</div></div>
+      <div class="body">
+        <div class="category">Other</div>
+        <h3>Craft Vapor Nic Salt 60ml</h3>
+        <div class="flavours">Lychee Mango, Watermelon on the rocks, Wixx, Iced Mango</div>
+        <div class="bottom">
+          <strong>R270</strong>
+          <span class="status in">In Stock</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="card" data-name="dispo drops nic salt velvet fizz, passion paradise, watermelon, grape, litchi, mango, golden dunked coffee donut, mango peach, blue razz, mint, grape cherry, raspberrycrystal, cherry watermelon, tropical passionfruit, litchi raspberry, grape energy, wicks"
+             data-category="Other"
+             data-status="in">
+      <div class="photo"><div class="placeholder">🚂</div></div>
+      <div class="body">
+        <div class="category">Other</div>
+        <h3>Dispo drops nic salt</h3>
+        <div class="flavours">Velvet fizz, Passion Paradise, Watermelon, Grape, Litchi, Mango, Golden dunked coffee donut, Mango peach, Blue razz, Mint, Grape cherry, RaspberryCrystal, Cherry watermelon, Tropical passionfruit, Litchi raspberry, Grape energy, Wicks</div>
+        <div class="bottom">
+          <strong>R280</strong>
+          <span class="status in">In Stock</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="card" data-name="dragon "
+             data-category="Other"
+             data-status="in">
+      <div class="photo"><div class="placeholder">🚂</div></div>
+      <div class="body">
+        <div class="category">Other</div>
+        <h3>Dragon</h3>
+        
+        <div class="bottom">
+          <strong>R10</strong>
+          <span class="status in">In Stock</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="card" data-name="e plus 0.6 ohm "
+             data-category="Other"
+             data-status="in">
+      <div class="photo"><div class="placeholder">🚂</div></div>
+      <div class="body">
+        <div class="category">Other</div>
+        <h3>E plus 0.6 Ohm</h3>
+        
+        <div class="bottom">
+          <strong>R70</strong>
+          <span class="status in">In Stock</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="card" data-name="e plus coil 0.3 ohm "
+             data-category="Other"
+             data-status="out">
+      <div class="photo"><div class="placeholder">🚂</div></div>
+      <div class="body">
+        <div class="category">Other</div>
+        <h3>E plus coil 0.3 Ohm</h3>
+        
+        <div class="bottom">
+          <strong>R70</strong>
+          <span class="status out">Out of Stock</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="card" data-name="elfbar 16k ew pod system pods cola ice, bluerazz ice"
+             data-category="Other"
+             data-status="in">
+      <div class="photo"><div class="placeholder">🚂</div></div>
+      <div class="body">
+        <div class="category">Other</div>
+        <h3>Elfbar 16k EW pod system pods</h3>
+        <div class="flavours">Cola ice, Bluerazz ice</div>
+        <div class="bottom">
+          <strong>R280</strong>
+          <span class="status in">In Stock</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="card" data-name="freebase nic 3mg "
+             data-category="Other"
+             data-status="out">
+      <div class="photo"><div class="placeholder">🚂</div></div>
+      <div class="body">
+        <div class="category">Other</div>
+        <h3>Freebase Nic 3mg</h3>
+        
+        <div class="bottom">
+          <strong>R0</strong>
+          <span class="status out">Out of Stock</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="card" data-name="freebase nic 6mg "
+             data-category="Other"
+             data-status="in">
+      <div class="photo"><div class="placeholder">🚂</div></div>
+      <div class="body">
+        <div class="category">Other</div>
+        <h3>Freebase Nic 6mg</h3>
+        
+        <div class="bottom">
+          <strong>R0</strong>
+          <span class="status in">In Stock</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="card" data-name="froot nic salt mango and orange, cranberry cooler, litchi"
+             data-category="Other"
+             data-status="out">
+      <div class="photo"><div class="placeholder">🚂</div></div>
+      <div class="body">
+        <div class="category">Other</div>
+        <h3>Froot nic salt</h3>
+        <div class="flavours">Mango and orange, Cranberry cooler, Litchi</div>
+        <div class="bottom">
+          <strong>R270</strong>
+          <span class="status out">Out of Stock</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="card" data-name="golisi battery "
+             data-category="Other"
+             data-status="out">
+      <div class="photo"><div class="placeholder">🚂</div></div>
+      <div class="body">
+        <div class="category">Other</div>
+        <h3>Golisi battery</h3>
+        
+        <div class="bottom">
+          <strong>R130</strong>
+          <span class="status out">Out of Stock</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="card" data-name="gtx 0.6 ohm "
+             data-category="Other"
+             data-status="in">
+      <div class="photo"><div class="placeholder">🚂</div></div>
+      <div class="body">
+        <div class="category">Other</div>
+        <h3>GTX 0.6 Ohm</h3>
+        
+        <div class="bottom">
+          <strong>R70</strong>
+          <span class="status in">In Stock</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="card" data-name="gumble wicks nic salt "
+             data-category="Other"
+             data-status="out">
+      <div class="photo"><div class="placeholder">🚂</div></div>
+      <div class="body">
+        <div class="category">Other</div>
+        <h3>Gumble wicks nic salt</h3>
+        
+        <div class="bottom">
+          <strong>R270</strong>
+          <span class="status out">Out of Stock</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="card" data-name="ice shots "
+             data-category="Other"
+             data-status="in">
+      <div class="photo"><div class="placeholder">🚂</div></div>
+      <div class="body">
+        <div class="category">Other</div>
+        <h3>Ice shots</h3>
+        
+        <div class="bottom">
+          <strong>R65</strong>
+          <span class="status in">In Stock</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="card" data-name="jack parow x pods 30k pink melkie"
+             data-category="Other"
+             data-status="in">
+      <div class="photo"><div class="placeholder">🚂</div></div>
+      <div class="body">
+        <div class="category">Other</div>
+        <h3>Jack Parow X Pods 30K</h3>
+        <div class="flavours">Pink Melkie</div>
+        <div class="bottom">
+          <strong>R260</strong>
+          <span class="status in">In Stock</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="card" data-name="jack parow x pods 30k lychee juice"
+             data-category="Other"
+             data-status="in">
+      <div class="photo"><div class="placeholder">🚂</div></div>
+      <div class="body">
+        <div class="category">Other</div>
+        <h3>Jack Parow X Pods 30K</h3>
+        <div class="flavours">Lychee Juice</div>
+        <div class="bottom">
+          <strong>R260</strong>
+          <span class="status in">In Stock</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="card" data-name="jack parow x pods 30k peach tropical"
+             data-category="Other"
+             data-status="in">
+      <div class="photo"><div class="placeholder">🚂</div></div>
+      <div class="body">
+        <div class="category">Other</div>
+        <h3>Jack Parow X Pods 30K</h3>
+        <div class="flavours">Peach Tropical</div>
+        <div class="bottom">
+          <strong>R260</strong>
+          <span class="status in">In Stock</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="card" data-name="jack parow x pods 30k cherry sucker"
+             data-category="Other"
+             data-status="in">
+      <div class="photo"><div class="placeholder">🚂</div></div>
+      <div class="body">
+        <div class="category">Other</div>
+        <h3>Jack Parow X Pods 30K</h3>
+        <div class="flavours">Cherry Sucker</div>
+        <div class="bottom">
+          <strong>R260</strong>
+          <span class="status in">In Stock</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="card" data-name="jack parow x pods 30k granadilla lolly"
+             data-category="Other"
+             data-status="out">
+      <div class="photo"><div class="placeholder">🚂</div></div>
+      <div class="body">
+        <div class="category">Other</div>
+        <h3>Jack Parow X Pods 30K</h3>
+        <div class="flavours">Granadilla Lolly</div>
+        <div class="bottom">
+          <strong>R260</strong>
+          <span class="status out">Out of Stock</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="card" data-name="jack parrow x pod system kit peach tropical"
+             data-category="Other"
+             data-status="out">
+      <div class="photo"><div class="placeholder">🚂</div></div>
+      <div class="body">
+        <div class="category">Other</div>
+        <h3>Jack Parrow x pod system Kit</h3>
+        <div class="flavours">Peach Tropical</div>
+        <div class="bottom">
+          <strong>R320</strong>
+          <span class="status out">Out of Stock</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="card" data-name="jack parrow x pod system kit cherry"
+             data-category="Other"
+             data-status="in">
+      <div class="photo"><div class="placeholder">🚂</div></div>
+      <div class="body">
+        <div class="category">Other</div>
+        <h3>Jack Parrow x pod system Kit</h3>
+        <div class="flavours">Cherry</div>
+        <div class="bottom">
+          <strong>R320</strong>
+          <span class="status in">In Stock</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="card" data-name="jack parrow x pod system kit lychee"
+             data-category="Other"
+             data-status="in">
+      <div class="photo"><div class="placeholder">🚂</div></div>
+      <div class="body">
+        <div class="category">Other</div>
+        <h3>Jack Parrow x pod system Kit</h3>
+        <div class="flavours">Lychee</div>
+        <div class="bottom">
+          <strong>R320</strong>
+          <span class="status in">In Stock</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="card" data-name="jack parrow x pod system kit granadilla"
+             data-category="Other"
+             data-status="in">
+      <div class="photo"><div class="placeholder">🚂</div></div>
+      <div class="body">
+        <div class="category">Other</div>
+        <h3>Jack Parrow x pod system Kit</h3>
+        <div class="flavours">Granadilla</div>
+        <div class="bottom">
+          <strong>R320</strong>
+          <span class="status in">In Stock</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="card" data-name="jack parrow x pods 12k granadilla"
+             data-category="Other"
+             data-status="out">
+      <div class="photo"><div class="placeholder">🚂</div></div>
+      <div class="body">
+        <div class="category">Other</div>
+        <h3>Jack Parrow X Pods 12K</h3>
+        <div class="flavours">Granadilla</div>
+        <div class="bottom">
+          <strong>R180</strong>
+          <span class="status out">Out of Stock</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="card" data-name="jack parrow x pods 12k red mamba"
+             data-category="Other"
+             data-status="out">
+      <div class="photo"><div class="placeholder">🚂</div></div>
+      <div class="body">
+        <div class="category">Other</div>
+        <h3>Jack Parrow X Pods 12K</h3>
+        <div class="flavours">Red Mamba</div>
+        <div class="bottom">
+          <strong>R180</strong>
+          <span class="status out">Out of Stock</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="card" data-name="jack parrow x pods 12k peach"
+             data-category="Other"
+             data-status="out">
+      <div class="photo"><div class="placeholder">🚂</div></div>
+      <div class="body">
+        <div class="category">Other</div>
+        <h3>Jack Parrow X Pods 12K</h3>
+        <div class="flavours">Peach</div>
+        <div class="bottom">
+          <strong>R180</strong>
+          <span class="status out">Out of Stock</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="card" data-name="jack parrow x pods 12k lychee"
+             data-category="Other"
+             data-status="out">
+      <div class="photo"><div class="placeholder">🚂</div></div>
+      <div class="body">
+        <div class="category">Other</div>
+        <h3>Jack Parrow X Pods 12K</h3>
+        <div class="flavours">Lychee</div>
+        <div class="bottom">
+          <strong>R180</strong>
+          <span class="status out">Out of Stock</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="card" data-name="jack parrow x pods 12k cherry"
+             data-category="Other"
+             data-status="out">
+      <div class="photo"><div class="placeholder">🚂</div></div>
+      <div class="body">
+        <div class="category">Other</div>
+        <h3>Jack Parrow X Pods 12K</h3>
+        <div class="flavours">cherry</div>
+        <div class="bottom">
+          <strong>R180</strong>
+          <span class="status out">Out of Stock</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="card" data-name="jack parrow x sleeves rose gold"
+             data-category="Other"
+             data-status="in">
+      <div class="photo"><div class="placeholder">🚂</div></div>
+      <div class="body">
+        <div class="category">Other</div>
+        <h3>Jack Parrow X sleeves</h3>
+        <div class="flavours">Rose Gold</div>
+        <div class="bottom">
+          <strong>R80</strong>
+          <span class="status in">In Stock</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="card" data-name="jack parrow x sleeves zebra"
+             data-category="Other"
+             data-status="in">
+      <div class="photo"><div class="placeholder">🚂</div></div>
+      <div class="body">
+        <div class="category">Other</div>
+        <h3>Jack Parrow X sleeves</h3>
+        <div class="flavours">Zebra</div>
+        <div class="bottom">
+          <strong>R80</strong>
+          <span class="status in">In Stock</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="card" data-name="jack parrow x sleeves leopard print"
+             data-category="Other"
+             data-status="in">
+      <div class="photo"><div class="placeholder">🚂</div></div>
+      <div class="body">
+        <div class="category">Other</div>
+        <h3>Jack Parrow X sleeves</h3>
+        <div class="flavours">Leopard Print</div>
+        <div class="bottom">
+          <strong>R80</strong>
+          <span class="status in">In Stock</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="card" data-name="jack parrow/bewolkpouches mint, black ice, black cherry, wicks"
+             data-category="Other"
+             data-status="out">
+      <div class="photo"><div class="placeholder">🚂</div></div>
+      <div class="body">
+        <div class="category">Other</div>
+        <h3>Jack Parrow/bewolkpouches</h3>
+        <div class="flavours">Mint, Black ice, Black cherry, Wicks</div>
+        <div class="bottom">
+          <strong>R80</strong>
+          <span class="status out">Out of Stock</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="card" data-name="jay jays "
+             data-category="Other"
+             data-status="in">
+      <div class="photo"><div class="placeholder">🚂</div></div>
+      <div class="body">
+        <div class="category">Other</div>
+        <h3>Jay Jays</h3>
+        
+        <div class="bottom">
+          <strong>R250</strong>
+          <span class="status in">In Stock</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="card" data-name="luxe q coils  0.6 "
+             data-category="Other"
+             data-status="in">
+      <div class="photo"><div class="placeholder">🚂</div></div>
+      <div class="body">
+        <div class="category">Other</div>
+        <h3>Luxe Q coils  0.6</h3>
+        
+        <div class="bottom">
+          <strong>R70</strong>
+          <span class="status in">In Stock</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="card" data-name="majestic vapor nic salt ju-long, ying-tao, lee-chi, orochi, shangri-la, mizuchi"
+             data-category="Other"
+             data-status="in">
+      <div class="photo"><div class="placeholder">🚂</div></div>
+      <div class="body">
+        <div class="category">Other</div>
+        <h3>Majestic vapor nic salt</h3>
+        <div class="flavours">Ju-long, Ying-tao, Lee-chi, Orochi, Shangri-la, Mizuchi</div>
+        <div class="bottom">
+          <strong>R250</strong>
+          <span class="status in">In Stock</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="card" data-name="memory lane lane cola"
+             data-category="Other"
+             data-status="in">
+      <div class="photo"><div class="placeholder">🚂</div></div>
+      <div class="body">
+        <div class="category">Other</div>
+        <h3>Memory Lane</h3>
+        <div class="flavours">Lane Cola</div>
+        <div class="bottom">
+          <strong>R250</strong>
+          <span class="status in">In Stock</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="card" data-name="memory lane zing pop"
+             data-category="Other"
+             data-status="in">
+      <div class="photo"><div class="placeholder">🚂</div></div>
+      <div class="body">
+        <div class="category">Other</div>
+        <h3>Memory Lane</h3>
+        <div class="flavours">Zing Pop</div>
+        <div class="bottom">
+          <strong>R250</strong>
+          <span class="status in">In Stock</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="card" data-name="memory lane smoochies"
+             data-category="Other"
+             data-status="in">
+      <div class="photo"><div class="placeholder">🚂</div></div>
+      <div class="body">
+        <div class="category">Other</div>
+        <h3>Memory Lane</h3>
+        <div class="flavours">Smoochies</div>
+        <div class="bottom">
+          <strong>R250</strong>
+          <span class="status in">In Stock</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="card" data-name="memory lane gobba balls"
+             data-category="Other"
+             data-status="out">
+      <div class="photo"><div class="placeholder">🚂</div></div>
+      <div class="body">
+        <div class="category">Other</div>
+        <h3>Memory Lane</h3>
+        <div class="flavours">Gobba Balls</div>
+        <div class="bottom">
+          <strong>R250</strong>
+          <span class="status out">Out of Stock</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="card" data-name="misfit nic salt juice sour apple lime, kiwi peach, grape cherry, cranberry strawberry raspberry, blackberry pomegranate raspberry, triple grape, krispy treats, marshmallow, bischoff cheesecake, butterscotch custard, blackberry cherry raspberry, mango peach apricot, blueberry cherry cranberry, blueberry blackcurrant banana, lychee guava cherry, strawberry lychee, pineapple lime, strawberry cherry raspberry, cherry fizz"
+             data-category="Other"
+             data-status="in">
+      <div class="photo"><div class="placeholder">🚂</div></div>
+      <div class="body">
+        <div class="category">Other</div>
+        <h3>Misfit nic salt juice</h3>
+        <div class="flavours">Sour Apple Lime, Kiwi Peach, Grape Cherry, Cranberry Strawberry Raspberry, Blackberry Pomegranate Raspberry, Triple Grape, Krispy Treats, Marshmallow, Bischoff Cheesecake, Butterscotch Custard, Blackberry Cherry Raspberry, Mango Peach Apricot, Blueberry Cherry Cranberry, Blueberry Blackcurrant Banana, Lychee Guava Cherry, Strawberry Lychee, Pineapple Lime, Strawberry Cherry Raspberry, Cherry Fizz</div>
+        <div class="bottom">
+          <strong>R280</strong>
+          <span class="status in">In Stock</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="card" data-name="mistify nic salt delightful gumball, the riddler, summer fugitive, total blackout, fruit o holic"
+             data-category="Other"
+             data-status="in">
+      <div class="photo"><div class="placeholder">🚂</div></div>
+      <div class="body">
+        <div class="category">Other</div>
+        <h3>Mistify nic salt</h3>
+        <div class="flavours">Delightful gumball, The riddler, Summer fugitive, Total blackout, Fruit o holic</div>
+        <div class="bottom">
+          <strong>R240</strong>
+          <span class="status in">In Stock</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="card" data-name="mntl nic/salt passionfruit"
+             data-category="Other"
+             data-status="in">
+      <div class="photo"><div class="placeholder">🚂</div></div>
+      <div class="body">
+        <div class="category">Other</div>
+        <h3>Mntl nic/salt</h3>
+        <div class="flavours">Passionfruit</div>
+        <div class="bottom">
+          <strong>R320</strong>
+          <span class="status in">In Stock</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="card" data-name="mntl nic/salt mint"
+             data-category="Other"
+             data-status="in">
+      <div class="photo"><div class="placeholder">🚂</div></div>
+      <div class="body">
+        <div class="category">Other</div>
+        <h3>Mntl nic/salt</h3>
+        <div class="flavours">Mint</div>
+        <div class="bottom">
+          <strong>R320</strong>
+          <span class="status in">In Stock</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="card" data-name="mntl nic/salt grape"
+             data-category="Other"
+             data-status="out">
+      <div class="photo"><div class="placeholder">🚂</div></div>
+      <div class="body">
+        <div class="category">Other</div>
+        <h3>Mntl nic/salt</h3>
+        <div class="flavours">Grape</div>
+        <div class="bottom">
+          <strong>R320</strong>
+          <span class="status out">Out of Stock</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="card" data-name="mntl nic/salt wicks"
+             data-category="Other"
+             data-status="in">
+      <div class="photo"><div class="placeholder">🚂</div></div>
+      <div class="body">
+        <div class="category">Other</div>
+        <h3>Mntl nic/salt</h3>
+        <div class="flavours">Wicks</div>
+        <div class="bottom">
+          <strong>R320</strong>
+          <span class="status in">In Stock</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="card" data-name="mntl nic/salt litchi"
+             data-category="Other"
+             data-status="out">
+      <div class="photo"><div class="placeholder">🚂</div></div>
+      <div class="body">
+        <div class="category">Other</div>
+        <h3>Mntl nic/salt</h3>
+        <div class="flavours">Litchi</div>
+        <div class="bottom">
+          <strong>R320</strong>
+          <span class="status out">Out of Stock</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="card" data-name="mntl nic/salt blue berry"
+             data-category="Other"
+             data-status="in">
+      <div class="photo"><div class="placeholder">🚂</div></div>
+      <div class="body">
+        <div class="category">Other</div>
+        <h3>Mntl nic/salt</h3>
+        <div class="flavours">Blue berry</div>
+        <div class="bottom">
+          <strong>R320</strong>
+          <span class="status in">In Stock</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="card" data-name="moist nic salt lush litchi, crushin currant, razzle raspberry, pumpin peach, kinky kiwi, bouncing berry"
+             data-category="Other"
+             data-status="out">
+      <div class="photo"><div class="placeholder">🚂</div></div>
+      <div class="body">
+        <div class="category">Other</div>
+        <h3>Moist nic salt</h3>
+        <div class="flavours">Lush litchi, Crushin currant, Razzle raspberry, Pumpin peach, Kinky kiwi, Bouncing berry</div>
+        <div class="bottom">
+          <strong>R200</strong>
+          <span class="status out">Out of Stock</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="card" data-name="mooch nic salts breakfast punch, peach, pineapple, litchi, just berries, juicy bubblegum, blackcurrant"
+             data-category="Other"
+             data-status="out">
+      <div class="photo"><div class="placeholder">🚂</div></div>
+      <div class="body">
+        <div class="category">Other</div>
+        <h3>Mooch nic salts</h3>
+        <div class="flavours">Breakfast punch, Peach, Pineapple, Litchi, Just berries, Juicy bubblegum, Blackcurrant</div>
+        <div class="bottom">
+          <strong>R280</strong>
+          <span class="status out">Out of Stock</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="card" data-name="ndulge nic salt pineapple trivia, peach paradise, mango cardinal, zesty zen"
+             data-category="Other"
+             data-status="in">
+      <div class="photo"><div class="placeholder">🚂</div></div>
+      <div class="body">
+        <div class="category">Other</div>
+        <h3>Ndulge nic salt</h3>
+        <div class="flavours">Pineapple trivia, Peach paradise, Mango cardinal, Zesty zen</div>
+        <div class="bottom">
+          <strong>R250</strong>
+          <span class="status in">In Stock</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="card" data-name="nic shot 20mg/30ml "
+             data-category="Other"
+             data-status="in">
+      <div class="photo"><div class="placeholder">🚂</div></div>
+      <div class="body">
+        <div class="category">Other</div>
+        <h3>Nic Shot 20mg/30ml</h3>
+        
+        <div class="bottom">
+          <strong>R0</strong>
+          <span class="status in">In Stock</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="card" data-name="nic shot 25mg/30ml "
+             data-category="Other"
+             data-status="out">
+      <div class="photo"><div class="placeholder">🚂</div></div>
+      <div class="body">
+        <div class="category">Other</div>
+        <h3>Nic Shot 25mg/30ml</h3>
+        
+        <div class="bottom">
+          <strong>R0</strong>
+          <span class="status out">Out of Stock</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="card" data-name="nic shot 30mg/30ml "
+             data-category="Other"
+             data-status="in">
+      <div class="photo"><div class="placeholder">🚂</div></div>
+      <div class="body">
+        <div class="category">Other</div>
+        <h3>Nic shot 30mg/30ml</h3>
+        
+        <div class="bottom">
+          <strong>R0</strong>
+          <span class="status in">In Stock</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="card" data-name="nic shot 35mg/30ml "
+             data-category="Other"
+             data-status="out">
+      <div class="photo"><div class="placeholder">🚂</div></div>
+      <div class="body">
+        <div class="category">Other</div>
+        <h3>Nic shot 35mg/30ml</h3>
+        
+        <div class="bottom">
+          <strong>R0</strong>
+          <span class="status out">Out of Stock</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="card" data-name="nic shot 40mg/15ml "
+             data-category="Other"
+             data-status="out">
+      <div class="photo"><div class="placeholder">🚂</div></div>
+      <div class="body">
+        <div class="category">Other</div>
+        <h3>Nic Shot 40mg/15ml</h3>
+        
+        <div class="bottom">
+          <strong>R0</strong>
+          <span class="status out">Out of Stock</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="card" data-name="nic shot 40mg/30ml "
+             data-category="Other"
+             data-status="out">
+      <div class="photo"><div class="placeholder">🚂</div></div>
+      <div class="body">
+        <div class="category">Other</div>
+        <h3>Nic shot 40mg/30ml</h3>
+        
+        <div class="bottom">
+          <strong>R0</strong>
+          <span class="status out">Out of Stock</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="card" data-name="nic shot 50mg/30ml "
+             data-category="Other"
+             data-status="out">
+      <div class="photo"><div class="placeholder">🚂</div></div>
+      <div class="body">
+        <div class="category">Other</div>
+        <h3>Nic shot 50mg/30ml</h3>
+        
+        <div class="bottom">
+          <strong>R0</strong>
+          <span class="status out">Out of Stock</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="card" data-name="nulix nic salt cookie ice cream sandwich, blackcurrant grapefruit, mango peach, berry lime"
+             data-category="Other"
+             data-status="in">
+      <div class="photo"><div class="placeholder">🚂</div></div>
+      <div class="body">
+        <div class="category">Other</div>
+        <h3>Nulix nic salt</h3>
+        <div class="flavours">Cookie ice cream sandwich, Blackcurrant grapefruit, Mango peach, Berry lime</div>
+        <div class="bottom">
+          <strong>R250</strong>
+          <span class="status in">In Stock</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="card" data-name="old skool nic salt slushie, coffee cake, moonlight, sunset"
+             data-category="Other"
+             data-status="in">
+      <div class="photo"><div class="placeholder">🚂</div></div>
+      <div class="body">
+        <div class="category">Other</div>
+        <h3>Old skool nic salt</h3>
+        <div class="flavours">Slushie, Coffee cake, Moonlight, Sunset</div>
+        <div class="bottom">
+          <strong>R250</strong>
+          <span class="status in">In Stock</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="card" data-name="oxva nexlim 2 "
+             data-category="Other"
+             data-status="in">
+      <div class="photo"><div class="placeholder">🚂</div></div>
+      <div class="body">
+        <div class="category">Other</div>
+        <h3>Oxva Nexlim 2</h3>
+        
+        <div class="bottom">
+          <strong>R600</strong>
+          <span class="status in">In Stock</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="card" data-name="oxva nexlim 2 mini "
+             data-category="Other"
+             data-status="out">
+      <div class="photo"><div class="placeholder">🚂</div></div>
+      <div class="body">
+        <div class="category">Other</div>
+        <h3>Oxva Nexlim 2 Mini</h3>
+        
+        <div class="bottom">
+          <strong>R350</strong>
+          <span class="status out">Out of Stock</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="card" data-name="oxva nexlim coils "
+             data-category="Other"
+             data-status="in">
+      <div class="photo"><div class="placeholder">🚂</div></div>
+      <div class="body">
+        <div class="category">Other</div>
+        <h3>Oxva Nexlim coils</h3>
+        
+        <div class="bottom">
+          <strong>R70</strong>
+          <span class="status in">In Stock</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="card" data-name="oxva xlim coil 0.6 ohm "
+             data-category="Other"
+             data-status="in">
+      <div class="photo"><div class="placeholder">🚂</div></div>
+      <div class="body">
+        <div class="category">Other</div>
+        <h3>Oxva Xlim Coil 0.6 ohm</h3>
+        
+        <div class="bottom">
+          <strong>R70</strong>
+          <span class="status in">In Stock</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="card" data-name="oxva xlim coil 0.8 ohm "
+             data-category="Other"
+             data-status="in">
+      <div class="photo"><div class="placeholder">🚂</div></div>
+      <div class="body">
+        <div class="category">Other</div>
+        <h3>Oxva xlim coil 0.8 Ohm</h3>
+        
+        <div class="bottom">
+          <strong>R70</strong>
+          <span class="status in">In Stock</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="card" data-name="oxva xlim go lite gold, blue, brown, black"
+             data-category="Other"
+             data-status="in">
+      <div class="photo"><div class="placeholder">🚂</div></div>
+      <div class="body">
+        <div class="category">Other</div>
+        <h3>Oxva Xlim Go Lite</h3>
+        <div class="flavours">Gold, Blue, Brown, Black</div>
+        <div class="bottom">
+          <strong>R180</strong>
+          <span class="status in">In Stock</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="card" data-name="p coils 0.2 "
+             data-category="Other"
+             data-status="in">
+      <div class="photo"><div class="placeholder">🚂</div></div>
+      <div class="body">
+        <div class="category">Other</div>
+        <h3>P coils 0.2</h3>
+        
+        <div class="bottom">
+          <strong>R70</strong>
+          <span class="status in">In Stock</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="card" data-name="p coils 0.4 "
+             data-category="Other"
+             data-status="in">
+      <div class="photo"><div class="placeholder">🚂</div></div>
+      <div class="body">
+        <div class="category">Other</div>
+        <h3>P coils 0.4</h3>
+        
+        <div class="bottom">
+          <strong>R70</strong>
+          <span class="status in">In Stock</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="card" data-name="pod plus 30ml nic salt frozen blueberry cocktail, chilled cherry, pink avalanche, zero kelvin, black zest, peach ice, marvelous mango"
+             data-category="Other"
+             data-status="in">
+      <div class="photo"><div class="placeholder">🚂</div></div>
+      <div class="body">
+        <div class="category">Other</div>
+        <h3>Pod plus 30ml Nic salt</h3>
+        <div class="flavours">Frozen Blueberry Cocktail, Chilled Cherry, Pink Avalanche, Zero Kelvin, Black Zest, Peach Ice, Marvelous Mango</div>
+        <div class="bottom">
+          <strong>R140</strong>
+          <span class="status in">In Stock</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="card" data-name="pod plus nic salt blue lemonade pop, lime twist, black zest, glacial grape, marvelous mango, frozen  blueberry cocktail, zero kelvin, dragon frost, raspberry lychee ice, pink avalanche, chilled cherry, banana blizzard, chew"
+             data-category="Other"
+             data-status="in">
+      <div class="photo"><div class="placeholder">🚂</div></div>
+      <div class="body">
+        <div class="category">Other</div>
+        <h3>Pod plus nic salt</h3>
+        <div class="flavours">blue lemonade pop, Lime Twist, Black Zest, Glacial Grape, Marvelous Mango, Frozen  Blueberry Cocktail, Zero kelvin, Dragon frost, Raspberry lychee ice, Pink avalanche, Chilled cherry, Banana blizzard, Chew</div>
+        <div class="bottom">
+          <strong>R250</strong>
+          <span class="status in">In Stock</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="card" data-name="pods n salts nic salt 60ml fresh mint, ry4"
+             data-category="Other"
+             data-status="in">
+      <div class="photo"><div class="placeholder">🚂</div></div>
+      <div class="body">
+        <div class="category">Other</div>
+        <h3>Pods n Salts Nic salt 60ml</h3>
+        <div class="flavours">Fresh mint, RY4</div>
+        <div class="bottom">
+          <strong>R250</strong>
+          <span class="status in">In Stock</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="card" data-name="pods n salts nic salts 30ml fresh mint"
+             data-category="Other"
+             data-status="in">
+      <div class="photo"><div class="placeholder">🚂</div></div>
+      <div class="body">
+        <div class="category">Other</div>
+        <h3>Pods n Salts Nic Salts 30ml</h3>
+        <div class="flavours">Fresh Mint</div>
+        <div class="bottom">
+          <strong>R140</strong>
+          <span class="status in">In Stock</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="card" data-name="punctuation nic/salt litchi mango"
+             data-category="Other"
+             data-status="in">
+      <div class="photo"><div class="placeholder">🚂</div></div>
+      <div class="body">
+        <div class="category">Other</div>
+        <h3>Punctuation Nic/Salt</h3>
+        <div class="flavours">Litchi Mango</div>
+        <div class="bottom">
+          <strong>R320</strong>
+          <span class="status in">In Stock</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="card" data-name="punctuation nic/salt strawberry litchi"
+             data-category="Other"
+             data-status="in">
+      <div class="photo"><div class="placeholder">🚂</div></div>
+      <div class="body">
+        <div class="category">Other</div>
+        <h3>Punctuation Nic/Salt</h3>
+        <div class="flavours">Strawberry Litchi</div>
+        <div class="bottom">
+          <strong>R320</strong>
+          <span class="status in">In Stock</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="card" data-name="punctuation nic/salt blends"
+             data-category="Other"
+             data-status="in">
+      <div class="photo"><div class="placeholder">🚂</div></div>
+      <div class="body">
+        <div class="category">Other</div>
+        <h3>Punctuation Nic/Salt</h3>
+        <div class="flavours">Blends</div>
+        <div class="bottom">
+          <strong>R320</strong>
+          <span class="status in">In Stock</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="card" data-name="punctuation nic/salt mango pineapple"
+             data-category="Other"
+             data-status="in">
+      <div class="photo"><div class="placeholder">🚂</div></div>
+      <div class="body">
+        <div class="category">Other</div>
+        <h3>Punctuation Nic/Salt</h3>
+        <div class="flavours">Mango Pineapple</div>
+        <div class="bottom">
+          <strong>R320</strong>
+          <span class="status in">In Stock</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="card" data-name="rpm 3 coil 0.15 ohm "
+             data-category="Other"
+             data-status="in">
+      <div class="photo"><div class="placeholder">🚂</div></div>
+      <div class="body">
+        <div class="category">Other</div>
+        <h3>RPM 3 coil 0.15 Ohm</h3>
+        
+        <div class="bottom">
+          <strong>R70</strong>
+          <span class="status in">In Stock</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="card" data-name="shots of salt nic salt mango grape ice, blackcurrant popsicle, guava passionfruit orange, creamy custard, mango tropicalfruit"
+             data-category="Other"
+             data-status="out">
+      <div class="photo"><div class="placeholder">🚂</div></div>
+      <div class="body">
+        <div class="category">Other</div>
+        <h3>Shots of salt nic salt</h3>
+        <div class="flavours">Mango grape ice, Blackcurrant popsicle, Guava passionfruit orange, Creamy custard, Mango tropicalfruit</div>
+        <div class="bottom">
+          <strong>R220</strong>
+          <span class="status out">Out of Stock</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="card" data-name="sippin purple rain, zest rush, glacier, twisted, sunrise"
+             data-category="Other"
+             data-status="in">
+      <div class="photo"><div class="placeholder">🚂</div></div>
+      <div class="body">
+        <div class="category">Other</div>
+        <h3>Sippin</h3>
+        <div class="flavours">Purple Rain, Zest Rush, Glacier, Twisted, Sunrise</div>
+        <div class="bottom">
+          <strong>R300</strong>
+          <span class="status in">In Stock</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="card" data-name="sliced nic salt juice glacier raspberry, blizzard pineapple, chiller cherryberry, tropical freeze, frostbite grape"
+             data-category="Other"
+             data-status="in">
+      <div class="photo"><div class="placeholder">🚂</div></div>
+      <div class="body">
+        <div class="category">Other</div>
+        <h3>Sliced nic salt juice</h3>
+        <div class="flavours">Glacier raspberry, Blizzard pineapple, Chiller cherryberry, Tropical freeze, Frostbite grape</div>
+        <div class="bottom">
+          <strong>R230</strong>
+          <span class="status in">In Stock</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="card" data-name="slushee nic salt pineapple slush, summer berry slush, blue raspberry slush, grape slush, deez icy mango slush, cherry slush"
+             data-category="Other"
+             data-status="out">
+      <div class="photo"><div class="placeholder">🚂</div></div>
+      <div class="body">
+        <div class="category">Other</div>
+        <h3>Slushee nic salt</h3>
+        <div class="flavours">Pineapple slush, Summer berry slush, Blue raspberry slush, Grape slush, Deez icy mango slush, Cherry slush</div>
+        <div class="bottom">
+          <strong>R270</strong>
+          <span class="status out">Out of Stock</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="card" data-name="smok arco 0.6ohm "
+             data-category="Other"
+             data-status="in">
+      <div class="photo"><div class="placeholder">🚂</div></div>
+      <div class="body">
+        <div class="category">Other</div>
+        <h3>Smok Arco 0.6Ohm</h3>
+        
+        <div class="bottom">
+          <strong>R70</strong>
+          <span class="status in">In Stock</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="card" data-name="smok arco 0.8 "
+             data-category="Other"
+             data-status="out">
+      <div class="photo"><div class="placeholder">🚂</div></div>
+      <div class="body">
+        <div class="category">Other</div>
+        <h3>Smok Arco 0.8</h3>
+        
+        <div class="bottom">
+          <strong>R70</strong>
+          <span class="status out">Out of Stock</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="card" data-name="smok nord 6 black, gray, white, brown"
+             data-category="Other"
+             data-status="out">
+      <div class="photo"><div class="placeholder">🚂</div></div>
+      <div class="body">
+        <div class="category">Other</div>
+        <h3>Smok nord 6</h3>
+        <div class="flavours">Black, Gray, White, Brown</div>
+        <div class="bottom">
+          <strong>R650</strong>
+          <span class="status out">Out of Stock</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="card" data-name="smok novo eco pale gold, orange, purple, pink, pale blue, silver, black"
+             data-category="Other"
+             data-status="in">
+      <div class="photo"><div class="placeholder">🚂</div></div>
+      <div class="body">
+        <div class="category">Other</div>
+        <h3>Smok Novo Eco</h3>
+        <div class="flavours">Pale Gold, Orange, Purple, Pink, Pale Blue, Silver, Black</div>
+        <div class="bottom">
+          <strong>R250</strong>
+          <span class="status in">In Stock</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="card" data-name="smok rpm 4 0.6ohm "
+             data-category="Other"
+             data-status="in">
+      <div class="photo"><div class="placeholder">🚂</div></div>
+      <div class="body">
+        <div class="category">Other</div>
+        <h3>Smok Rpm 4 0.6ohm</h3>
+        
+        <div class="bottom">
+          <strong>R70</strong>
+          <span class="status in">In Stock</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="card" data-name="solus coil 0.9 ohm "
+             data-category="Other"
+             data-status="in">
+      <div class="photo"><div class="placeholder">🚂</div></div>
+      <div class="body">
+        <div class="category">Other</div>
+        <h3>Solus coil 0.9 Ohm</h3>
+        
+        <div class="bottom">
+          <strong>R70</strong>
+          <span class="status in">In Stock</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="card" data-name="sqrt nic salt kiwi strawberry, dragonfruit blueberry banana"
+             data-category="Other"
+             data-status="out">
+      <div class="photo"><div class="placeholder">🚂</div></div>
+      <div class="body">
+        <div class="category">Other</div>
+        <h3>SQRT nic salt</h3>
+        <div class="flavours">Kiwi strawberry, Dragonfruit blueberry banana</div>
+        <div class="bottom">
+          <strong>R230</strong>
+          <span class="status out">Out of Stock</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="card" data-name="tko nic salt mango ice, blue milk, strawberry milk, grape gum, 18 karat, me time, coffee time, classic tobacco, brandy and cola, cherry, strawberry, lychee, menthol mint"
+             data-category="Other"
+             data-status="out">
+      <div class="photo"><div class="placeholder">🚂</div></div>
+      <div class="body">
+        <div class="category">Other</div>
+        <h3>Tko nic salt</h3>
+        <div class="flavours">Mango Ice, Blue milk, Strawberry milk, Grape gum, 18 karat, Me time, Coffee time, Classic tobacco, Brandy and cola, Cherry, Strawberry, Lychee, Menthol mint</div>
+        <div class="bottom">
+          <strong>R180</strong>
+          <span class="status out">Out of Stock</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="card" data-name="upends switch battery "
+             data-category="Other"
+             data-status="out">
+      <div class="photo"><div class="placeholder">🚂</div></div>
+      <div class="body">
+        <div class="category">Other</div>
+        <h3>Upends switch battery</h3>
+        
+        <div class="bottom">
+          <strong>R150</strong>
+          <span class="status out">Out of Stock</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="card" data-name="vaporesso eco nano grey, night dark, purple, blue"
+             data-category="Other"
+             data-status="out">
+      <div class="photo"><div class="placeholder">🚂</div></div>
+      <div class="body">
+        <div class="category">Other</div>
+        <h3>Vaporesso eco nano</h3>
+        <div class="flavours">Grey, Night dark, Purple, Blue</div>
+        <div class="bottom">
+          <strong>R300</strong>
+          <span class="status out">Out of Stock</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="card" data-name="vaporesso gtx 0.2 ohm "
+             data-category="Other"
+             data-status="in">
+      <div class="photo"><div class="placeholder">🚂</div></div>
+      <div class="body">
+        <div class="category">Other</div>
+        <h3>Vaporesso Gtx 0.2 Ohm</h3>
+        
+        <div class="bottom">
+          <strong>R70</strong>
+          <span class="status in">In Stock</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="card" data-name="vibe coils 0.6/0.8 "
+             data-category="Other"
+             data-status="in">
+      <div class="photo"><div class="placeholder">🚂</div></div>
+      <div class="body">
+        <div class="category">Other</div>
+        <h3>Vibe coils 0.6/0.8</h3>
+        
+        <div class="bottom">
+          <strong>R70</strong>
+          <span class="status in">In Stock</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="card" data-name="vibe se pod system grey leather, black leather"
+             data-category="Other"
+             data-status="out">
+      <div class="photo"><div class="placeholder">🚂</div></div>
+      <div class="body">
+        <div class="category">Other</div>
+        <h3>Vibe SE Pod system</h3>
+        <div class="flavours">Grey Leather, Black Leather</div>
+        <div class="bottom">
+          <strong>R250</strong>
+          <span class="status out">Out of Stock</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="card" data-name="voopoo drag 5 kit green, pink, black"
+             data-category="Other"
+             data-status="out">
+      <div class="photo"><div class="placeholder">🚂</div></div>
+      <div class="body">
+        <div class="category">Other</div>
+        <h3>Voopoo drag 5 kit</h3>
+        <div class="flavours">Green, Pink, Black</div>
+        <div class="bottom">
+          <strong>R1,450</strong>
+          <span class="status out">Out of Stock</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="card" data-name="water "
+             data-category="Other"
+             data-status="in">
+      <div class="photo"><div class="placeholder">🚂</div></div>
+      <div class="body">
+        <div class="category">Other</div>
+        <h3>Water</h3>
+        
+        <div class="bottom">
+          <strong>R10</strong>
+          <span class="status in">In Stock</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="card" data-name="yeti 60ml longfill sour grape ice, apricot &amp; watermelon ice, honeydew blackcurrant ice, pineapple ice, mango ice"
+             data-category="Other"
+             data-status="in">
+      <div class="photo"><div class="placeholder">🚂</div></div>
+      <div class="body">
+        <div class="category">Other</div>
+        <h3>Yeti 60ml Longfill</h3>
+        <div class="flavours">Sour Grape ice, Apricot &amp; watermelon ice, Honeydew Blackcurrant ice, Pineapple Ice, Mango Ice</div>
+        <div class="bottom">
+          <strong>R320</strong>
+          <span class="status in">In Stock</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="card" data-name="z land mini battery "
+             data-category="Other"
+             data-status="in">
+      <div class="photo"><div class="placeholder">🚂</div></div>
+      <div class="body">
+        <div class="category">Other</div>
+        <h3>Z land mini Battery</h3>
+        
+        <div class="bottom">
+          <strong>R30</strong>
+          <span class="status in">In Stock</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="card" data-name="z land mini flavors grape, cotton candy, coffee, cherry, watermelon, blueberry, vanilla, strawberry, raspberry, pineapple, peach, passion fruit, berry mix, mango, lychee, kiwi, hazelnut, gum"
+             data-category="Other"
+             data-status="in">
+      <div class="photo"><div class="placeholder">🚂</div></div>
+      <div class="body">
+        <div class="category">Other</div>
+        <h3>Z land mini flavors</h3>
+        <div class="flavours">Grape, Cotton Candy, Coffee, Cherry, Watermelon, Blueberry, Vanilla, Strawberry, Raspberry, Pineapple, Peach, Passion fruit, Berry mix, Mango, Lychee, kiwi, Hazelnut, Gum</div>
+        <div class="bottom">
+          <strong>R20</strong>
+          <span class="status in">In Stock</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="card" data-name="upends switch pods fruit gummmy bear, sweet coffee, banana milkshake, mentos mint, cherry peach lemonade, raspberry peach lemonade, triple mango, cherry ice, pineapple ice, skittles, passion fruit, cranberry grape, banana ice, peach ice"
+             data-category="Pod system"
+             data-status="in">
+      <div class="photo"><div class="placeholder">🚂</div></div>
+      <div class="body">
+        <div class="category">Pod system</div>
+        <h3>Upends Switch pods</h3>
+        <div class="flavours">Fruit gummmy bear, Sweet coffee, Banana milkshake, Mentos mint, Cherry peach lemonade, Raspberry peach lemonade, Triple mango, Cherry ice, Pineapple ice, Skittles, Passion fruit, Cranberry grape, Banana ice, Peach ice</div>
+        <div class="bottom">
+          <strong>R110</strong>
+          <span class="status in">In Stock</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="card" data-name="z land 12k flavor strawberry, watermelon, blueberry, hazlenut, pineapple, grape, mango, banana, cotton candy, cherry, tabacco, guava, coffee, lime, peach, lychee, raspberry, menthol"
+             data-category="Pod system"
+             data-status="in">
+      <div class="photo"><div class="placeholder">🚂</div></div>
+      <div class="body">
+        <div class="category">Pod system</div>
+        <h3>Z land 12k flavor</h3>
+        <div class="flavours">Strawberry, Watermelon, Blueberry, Hazlenut, Pineapple, Grape, Mango, Banana, Cotton candy, Cherry, Tabacco, Guava, Coffee, Lime, Peach, Lychee, Raspberry, Menthol</div>
+        <div class="bottom">
+          <strong>R160</strong>
+          <span class="status in">In Stock</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="card" data-name="z land battery "
+             data-category="Pod system"
+             data-status="out">
+      <div class="photo"><div class="placeholder">🚂</div></div>
+      <div class="body">
+        <div class="category">Pod system</div>
+        <h3>Z land battery</h3>
+        
+        <div class="bottom">
+          <strong>R100</strong>
+          <span class="status out">Out of Stock</span>
+        </div>
+      </div>
+    </article>
+    </div>
+  <div class="summary hidden" id="none">No products match your search.</div>
+</div>
+<footer>Stoomtrein Vapers • Ermelo, Mpumalanga</footer>
+<script>
+const cards=[...document.querySelectorAll('.card')];
+const search=document.getElementById('search');
+const category=document.getElementById('category');
+const status=document.getElementById('status');
+const summary=document.getElementById('summary');
+const none=document.getElementById('none');
+function filter(){
+  const q=search.value.toLowerCase().trim(), c=category.value, s=status.value;
+  let shown=0;
+  cards.forEach(card=>{
+    const okQ=!q || card.dataset.name.includes(q);
+    const okC=!c || card.dataset.category===c;
+    const okS=!s || card.dataset.status===s;
+    const show=okQ&&okC&&okS;
+    card.classList.toggle('hidden',!show);
+    if(show) shown++;
+  });
+  summary.textContent=shown+' product'+(shown===1?'':'s')+' shown';
+  none.classList.toggle('hidden',shown!==0);
+}
+[search,category,status].forEach(el=>el.addEventListener('input',filter));
+filter();
+</script>
+</body>
+</html>
