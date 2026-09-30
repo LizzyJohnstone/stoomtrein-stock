@@ -1,0 +1,2295 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Stoomtrein Vapers — Our Products</title>
+
+<!-- ================= EASY CUSTOMIZATION =================
+     Change these 3 lines to change the top header.
+     ======================================================= -->
+<script>
+const STORE_NAME = "STOOMTREIN VAPERS";
+const HEADER_TITLE = "Our Products";
+const HEADER_SUBTITLE = "Products and flavours we normally carry in store.";
+</script>
+
+<style>
+:root {
+  --page-bg:#f4f5f7; --header-bg:#111827; --header-text:#fff;
+  --card-bg:#fff; --text:#17191c; --muted:#6b7280; --line:#e5e7eb;
+}
+* {box-sizing:border-box}
+body {margin:0;background:var(--page-bg);color:var(--text);font-family:Arial,Helvetica,sans-serif}
+.wrap {max-width:1150px;margin:auto;padding:24px 16px 50px}
+.hero {background:var(--header-bg);color:var(--header-text);border-radius:20px;padding:34px 24px;margin-bottom:20px}
+.hero .store-name {font-size:13px;letter-spacing:.14em;opacity:.75;text-transform:uppercase;margin-bottom:8px}
+.hero h1 {margin:0 0 8px;font-size:34px}
+.hero p {margin:0;font-size:15px;opacity:.82}
+.controls {display:grid;grid-template-columns:1fr 250px;gap:10px;margin-bottom:18px}
+input,select {width:100%;padding:13px 14px;border:1px solid var(--line);border-radius:12px;background:#fff;font-size:15px}
+.count {color:var(--muted);font-size:13px;margin:0 0 12px}
+.grid {display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:15px}
+.card {background:var(--card-bg);border:1px solid var(--line);border-radius:16px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,.04)}
+.image-placeholder {height:190px;background:#eef0f3;display:flex;align-items:center;justify-content:center;color:#8a9099;font-size:13px;letter-spacing:.08em}
+.image-placeholder img {width:100%;height:100%;object-fit:contain;display:block;background:#fff}
+.card-body {padding:17px}
+.category {color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:.08em;margin-bottom:5px}
+.card h3 {margin:0 0 7px;font-size:18px;line-height:1.25}
+.price {font-size:20px;font-weight:700;margin-bottom:9px}
+.options {color:#4b5563;font-size:13px;line-height:1.5}
+.store {margin-top:13px;padding-top:10px;border-top:1px solid var(--line);color:var(--muted);font-size:12px}
+.empty {display:none;text-align:center;padding:35px;color:var(--muted)}
+.note {color:var(--muted);font-size:12px;line-height:1.5;margin-top:20px}
+@media(max-width:700px) {
+  .controls {grid-template-columns:1fr}
+  .hero h1 {font-size:28px}
+  .image-placeholder {height:170px}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="hero">
+  <div class="store-name" id="storeName"></div>
+  <h1 id="headerTitle"></h1>
+  <p id="headerSubtitle"></p>
+</header>
+
+<div class="controls">
+  <input id="search" type="search" placeholder="Search products or flavours…">
+  <select id="category">
+    <option value="all">All categories</option>
+    <option value="Coils">Coils</option>
+<option value="Disposable">Disposable</option>
+<option value="Freebase">Freebase</option>
+<option value="Other">Other</option>
+<option value="Pod system">Pod system</option>
+  </select>
+</div>
+
+<div class="count" id="count"></div>
+<main class="grid" id="grid">
+      <article class="card" data-category="Other" data-search="3rd world flavor nic salt other strawberry kiwi cooler • apple cranberry cooler • lytchi freezo • strawberry freezo">
+        <!-- TO ADD A PRODUCT IMAGE:
+             Replace the text inside .image-placeholder with:
+             <img src="YOUR-IMAGE-URL-HERE" alt="3rd world flavor nic salt">
+        -->
+        <div class="image-placeholder"><span>ADD IMAGE</span></div>
+        <div class="card-body">
+          <div class="category">Other</div>
+          <h3>3rd world flavor nic salt</h3>
+          <div class="price">R300</div>
+          <div class="options"><strong>Options:</strong> Strawberry kiwi cooler • Apple cranberry cooler • Lytchi freezo • Strawberry freezo</div>
+          <div class="store">Normally carried at Stoomtrein Vapers</div>
+        </div>
+      </article>
+    
+      <article class="card" data-category="Coils" data-search="airpen 0.8 ohm coils ">
+        <!-- TO ADD A PRODUCT IMAGE:
+             Replace the text inside .image-placeholder with:
+             <img src="YOUR-IMAGE-URL-HERE" alt="Airpen 0.8 ohm">
+        -->
+        <div class="image-placeholder"><span>ADD IMAGE</span></div>
+        <div class="card-body">
+          <div class="category">Coils</div>
+          <h3>Airpen 0.8 ohm</h3>
+          <div class="price">R70</div>
+          
+          <div class="store">Normally carried at Stoomtrein Vapers</div>
+        </div>
+      </article>
+    
+      <article class="card" data-category="Coils" data-search="airpen 1.0 ohm coils ">
+        <!-- TO ADD A PRODUCT IMAGE:
+             Replace the text inside .image-placeholder with:
+             <img src="YOUR-IMAGE-URL-HERE" alt="Airpen 1.0 ohm">
+        -->
+        <div class="image-placeholder"><span>ADD IMAGE</span></div>
+        <div class="card-body">
+          <div class="category">Coils</div>
+          <h3>Airpen 1.0 ohm</h3>
+          <div class="price">R70</div>
+          
+          <div class="store">Normally carried at Stoomtrein Vapers</div>
+        </div>
+      </article>
+    
+      <article class="card" data-category="Other" data-search="armour series g pod other ">
+        <!-- TO ADD A PRODUCT IMAGE:
+             Replace the text inside .image-placeholder with:
+             <img src="YOUR-IMAGE-URL-HERE" alt="Armour series G pod">
+        -->
+        <div class="image-placeholder"><span>ADD IMAGE</span></div>
+        <div class="card-body">
+          <div class="category">Other</div>
+          <h3>Armour series G pod</h3>
+          <div class="price">R70</div>
+          
+          <div class="store">Normally carried at Stoomtrein Vapers</div>
+        </div>
+      </article>
+    
+      <article class="card" data-category="Other" data-search="asalted other nectarine knockout • moondrops on ice • stone fruit riot">
+        <!-- TO ADD A PRODUCT IMAGE:
+             Replace the text inside .image-placeholder with:
+             <img src="YOUR-IMAGE-URL-HERE" alt="Asalted">
+        -->
+        <div class="image-placeholder"><span>ADD IMAGE</span></div>
+        <div class="card-body">
+          <div class="category">Other</div>
+          <h3>Asalted</h3>
+          <div class="price">R240</div>
+          <div class="options"><strong>Options:</strong> Nectarine Knockout • Moondrops on ice • Stone fruit Riot</div>
+          <div class="store">Normally carried at Stoomtrein Vapers</div>
+        </div>
+      </article>
+    
+      <article class="card" data-category="Other" data-search="b coils 0.2 other ">
+        <!-- TO ADD A PRODUCT IMAGE:
+             Replace the text inside .image-placeholder with:
+             <img src="YOUR-IMAGE-URL-HERE" alt="B coils 0.2">
+        -->
+        <div class="image-placeholder"><span>ADD IMAGE</span></div>
+        <div class="card-body">
+          <div class="category">Other</div>
+          <h3>B coils 0.2</h3>
+          <div class="price">R70</div>
+          
+          <div class="store">Normally carried at Stoomtrein Vapers</div>
+        </div>
+      </article>
+    
+      <article class="card" data-category="Other" data-search="b coils 0.6 other ">
+        <!-- TO ADD A PRODUCT IMAGE:
+             Replace the text inside .image-placeholder with:
+             <img src="YOUR-IMAGE-URL-HERE" alt="B coils 0.6">
+        -->
+        <div class="image-placeholder"><span>ADD IMAGE</span></div>
+        <div class="card-body">
+          <div class="category">Other</div>
+          <h3>B coils 0.6</h3>
+          <div class="price">R70</div>
+          
+          <div class="store">Normally carried at Stoomtrein Vapers</div>
+        </div>
+      </article>
+    
+      <article class="card" data-category="Other" data-search="bard nic salt other tropical fruits • blueberry cotton candy • strawberry lime • gummy grape • mixed berry • berry grape • berry blast • gummy bear • bubblegum ice • strawberry raspberry cherry • fuji • aloe grape • triple mango ice • banana ice • grape blackcurrant • energy ice • lemon ice">
+        <!-- TO ADD A PRODUCT IMAGE:
+             Replace the text inside .image-placeholder with:
+             <img src="YOUR-IMAGE-URL-HERE" alt="Bard nic salt">
+        -->
+        <div class="image-placeholder"><span>ADD IMAGE</span></div>
+        <div class="card-body">
+          <div class="category">Other</div>
+          <h3>Bard nic salt</h3>
+          <div class="price">R250</div>
+          <div class="options"><strong>Options:</strong> Tropical Fruits • Blueberry Cotton Candy • Strawberry Lime • Gummy Grape • Mixed berry • Berry grape • Berry blast • Gummy bear • Bubblegum ice • Strawberry raspberry cherry • Fuji • Aloe grape • Triple mango ice • Banana ice • Grape blackcurrant • Energy ice • Lemon ice</div>
+          <div class="store">Normally carried at Stoomtrein Vapers</div>
+        </div>
+      </article>
+    
+      <article class="card" data-category="Other" data-search="bewolk smart juice 60ml other frozen mango • tropicle sparkle • candy watermelon strawberry • gummi burst • orange creamsicle • wicks candy">
+        <!-- TO ADD A PRODUCT IMAGE:
+             Replace the text inside .image-placeholder with:
+             <img src="YOUR-IMAGE-URL-HERE" alt="Bewolk Smart Juice 60ml">
+        -->
+        <div class="image-placeholder"><span>ADD IMAGE</span></div>
+        <div class="card-body">
+          <div class="category">Other</div>
+          <h3>Bewolk Smart Juice 60ml</h3>
+          <div class="price">R310</div>
+          <div class="options"><strong>Options:</strong> Frozen Mango • Tropicle Sparkle • Candy Watermelon Strawberry • Gummi Burst • Orange Creamsicle • Wicks Candy</div>
+          <div class="store">Normally carried at Stoomtrein Vapers</div>
+        </div>
+      </article>
+    
+      <article class="card" data-category="Other" data-search="bewolk zimo other peppermint • mint • citrus • mango • watermelon">
+        <!-- TO ADD A PRODUCT IMAGE:
+             Replace the text inside .image-placeholder with:
+             <img src="YOUR-IMAGE-URL-HERE" alt="Bewolk Zimo">
+        -->
+        <div class="image-placeholder"><span>ADD IMAGE</span></div>
+        <div class="card-body">
+          <div class="category">Other</div>
+          <h3>Bewolk Zimo</h3>
+          <div class="price">R85</div>
+          <div class="options"><strong>Options:</strong> Peppermint • Mint • Citrus • Mango • Watermelon</div>
+          <div class="store">Normally carried at Stoomtrein Vapers</div>
+        </div>
+      </article>
+    
+      <article class="card" data-category="Other" data-search="black nic salt other blackcurrant and litchi • blackcurrant and mango • blackcurrant slurpee">
+        <!-- TO ADD A PRODUCT IMAGE:
+             Replace the text inside .image-placeholder with:
+             <img src="YOUR-IMAGE-URL-HERE" alt="Black nic salt">
+        -->
+        <div class="image-placeholder"><span>ADD IMAGE</span></div>
+        <div class="card-body">
+          <div class="category">Other</div>
+          <h3>Black nic salt</h3>
+          <div class="price">R270</div>
+          <div class="options"><strong>Options:</strong> Blackcurrant and litchi • Blackcurrant and mango • Blackcurrant slurpee</div>
+          <div class="store">Normally carried at Stoomtrein Vapers</div>
+        </div>
+      </article>
+    
+      <article class="card" data-category="Other" data-search="bombay crush nic salt 60ml other ">
+        <!-- TO ADD A PRODUCT IMAGE:
+             Replace the text inside .image-placeholder with:
+             <img src="YOUR-IMAGE-URL-HERE" alt="Bombay Crush nic salt 60ml">
+        -->
+        <div class="image-placeholder"><span>ADD IMAGE</span></div>
+        <div class="card-body">
+          <div class="category">Other</div>
+          <h3>Bombay Crush nic salt 60ml</h3>
+          <div class="price">R270</div>
+          
+          <div class="store">Normally carried at Stoomtrein Vapers</div>
+        </div>
+      </article>
+    
+      <article class="card" data-category="Other" data-search="caliburn air other shocking green • pink • light blue • silver • orange • green">
+        <!-- TO ADD A PRODUCT IMAGE:
+             Replace the text inside .image-placeholder with:
+             <img src="YOUR-IMAGE-URL-HERE" alt="Caliburn Air">
+        -->
+        <div class="image-placeholder"><span>ADD IMAGE</span></div>
+        <div class="card-body">
+          <div class="category">Other</div>
+          <h3>Caliburn Air</h3>
+          <div class="price">R200</div>
+          <div class="options"><strong>Options:</strong> Shocking Green • Pink • Light Blue • Silver • Orange • green</div>
+          <div class="store">Normally carried at Stoomtrein Vapers</div>
+        </div>
+      </article>
+    
+      <article class="card" data-category="Other" data-search="caliburn g5 other glacier blue • karst grey • gunmetal grey • polar black">
+        <!-- TO ADD A PRODUCT IMAGE:
+             Replace the text inside .image-placeholder with:
+             <img src="YOUR-IMAGE-URL-HERE" alt="Caliburn G5">
+        -->
+        <div class="image-placeholder"><span>ADD IMAGE</span></div>
+        <div class="card-body">
+          <div class="category">Other</div>
+          <h3>Caliburn G5</h3>
+          <div class="price">R620</div>
+          <div class="options"><strong>Options:</strong> Glacier Blue • Karst Grey • Gunmetal Grey • Polar Black</div>
+          <div class="store">Normally carried at Stoomtrein Vapers</div>
+        </div>
+      </article>
+    
+      <article class="card" data-category="Other" data-search="caliburn g5 lite other grey • black • blue • pink • green">
+        <!-- TO ADD A PRODUCT IMAGE:
+             Replace the text inside .image-placeholder with:
+             <img src="YOUR-IMAGE-URL-HERE" alt="Caliburn G5 Lite">
+        -->
+        <div class="image-placeholder"><span>ADD IMAGE</span></div>
+        <div class="card-body">
+          <div class="category">Other</div>
+          <h3>Caliburn G5 Lite</h3>
+          <div class="price">R280</div>
+          <div class="options"><strong>Options:</strong> Grey • Black • Blue • Pink • Green</div>
+          <div class="store">Normally carried at Stoomtrein Vapers</div>
+        </div>
+      </article>
+    
+      <article class="card" data-category="Other" data-search="coke 440ml other ">
+        <!-- TO ADD A PRODUCT IMAGE:
+             Replace the text inside .image-placeholder with:
+             <img src="YOUR-IMAGE-URL-HERE" alt="Coke 440ml">
+        -->
+        <div class="image-placeholder"><span>ADD IMAGE</span></div>
+        <div class="card-body">
+          <div class="category">Other</div>
+          <h3>Coke 440ml</h3>
+          <div class="price">R15</div>
+          
+          <div class="store">Normally carried at Stoomtrein Vapers</div>
+        </div>
+      </article>
+    
+      <article class="card" data-category="Freebase" data-search="cosmic dropz freebase freebase galactic grape • cherbet ice">
+        <!-- TO ADD A PRODUCT IMAGE:
+             Replace the text inside .image-placeholder with:
+             <img src="YOUR-IMAGE-URL-HERE" alt="Cosmic dropz freebase">
+        -->
+        <div class="image-placeholder"><span>ADD IMAGE</span></div>
+        <div class="card-body">
+          <div class="category">Freebase</div>
+          <h3>Cosmic dropz freebase</h3>
+          <div class="price">R280</div>
+          <div class="options"><strong>Options:</strong> Galactic grape • Cherbet ice</div>
+          <div class="store">Normally carried at Stoomtrein Vapers</div>
+        </div>
+      </article>
+    
+      <article class="card" data-category="Other" data-search="cosmic dropz nic salts other cherbet">
+        <!-- TO ADD A PRODUCT IMAGE:
+             Replace the text inside .image-placeholder with:
+             <img src="YOUR-IMAGE-URL-HERE" alt="Cosmic dropz nic salts">
+        -->
+        <div class="image-placeholder"><span>ADD IMAGE</span></div>
+        <div class="card-body">
+          <div class="category">Other</div>
+          <h3>Cosmic dropz nic salts</h3>
+          <div class="price">R300</div>
+          <div class="options"><strong>Options:</strong> Cherbet</div>
+          <div class="store">Normally carried at Stoomtrein Vapers</div>
+        </div>
+      </article>
+    
+      <article class="card" data-category="Other" data-search="cotton bacon other ">
+        <!-- TO ADD A PRODUCT IMAGE:
+             Replace the text inside .image-placeholder with:
+             <img src="YOUR-IMAGE-URL-HERE" alt="Cotton bacon">
+        -->
+        <div class="image-placeholder"><span>ADD IMAGE</span></div>
+        <div class="card-body">
+          <div class="category">Other</div>
+          <h3>Cotton bacon</h3>
+          <div class="price">R70</div>
+          
+          <div class="store">Normally carried at Stoomtrein Vapers</div>
+        </div>
+      </article>
+    
+      <article class="card" data-category="Other" data-search="craft vapor nic salt 60ml other lychee mango • watermelon on the rocks • wixx • iced mango">
+        <!-- TO ADD A PRODUCT IMAGE:
+             Replace the text inside .image-placeholder with:
+             <img src="YOUR-IMAGE-URL-HERE" alt="Craft Vapor Nic Salt 60ml">
+        -->
+        <div class="image-placeholder"><span>ADD IMAGE</span></div>
+        <div class="card-body">
+          <div class="category">Other</div>
+          <h3>Craft Vapor Nic Salt 60ml</h3>
+          <div class="price">R270</div>
+          <div class="options"><strong>Options:</strong> Lychee Mango • Watermelon on the rocks • Wixx • Iced Mango</div>
+          <div class="store">Normally carried at Stoomtrein Vapers</div>
+        </div>
+      </article>
+    
+      <article class="card" data-category="Other" data-search="dispo drops nic salt other velvet fizz • passion paradise • watermelon • grape • litchi • mango • golden dunked coffee donut • mango peach • blue razz • mint • grape cherry • raspberrycrystal • cherry watermelon • tropical passionfruit • litchi raspberry • grape energy • wicks">
+        <!-- TO ADD A PRODUCT IMAGE:
+             Replace the text inside .image-placeholder with:
+             <img src="YOUR-IMAGE-URL-HERE" alt="Dispo drops nic salt">
+        -->
+        <div class="image-placeholder"><span>ADD IMAGE</span></div>
+        <div class="card-body">
+          <div class="category">Other</div>
+          <h3>Dispo drops nic salt</h3>
+          <div class="price">R280</div>
+          <div class="options"><strong>Options:</strong> Velvet fizz • Passion Paradise • Watermelon • Grape • Litchi • Mango • Golden dunked coffee donut • Mango peach • Blue razz • Mint • Grape cherry • RaspberryCrystal • Cherry watermelon • Tropical passionfruit • Litchi raspberry • Grape energy • Wicks</div>
+          <div class="store">Normally carried at Stoomtrein Vapers</div>
+        </div>
+      </article>
+    
+      <article class="card" data-category="Other" data-search="dragon other ">
+        <!-- TO ADD A PRODUCT IMAGE:
+             Replace the text inside .image-placeholder with:
+             <img src="YOUR-IMAGE-URL-HERE" alt="Dragon">
+        -->
+        <div class="image-placeholder"><span>ADD IMAGE</span></div>
+        <div class="card-body">
+          <div class="category">Other</div>
+          <h3>Dragon</h3>
+          <div class="price">R10</div>
+          
+          <div class="store">Normally carried at Stoomtrein Vapers</div>
+        </div>
+      </article>
+    
+      <article class="card" data-category="Other" data-search="e plus 0.6 ohm other ">
+        <!-- TO ADD A PRODUCT IMAGE:
+             Replace the text inside .image-placeholder with:
+             <img src="YOUR-IMAGE-URL-HERE" alt="E plus 0.6 Ohm">
+        -->
+        <div class="image-placeholder"><span>ADD IMAGE</span></div>
+        <div class="card-body">
+          <div class="category">Other</div>
+          <h3>E plus 0.6 Ohm</h3>
+          <div class="price">R70</div>
+          
+          <div class="store">Normally carried at Stoomtrein Vapers</div>
+        </div>
+      </article>
+    
+      <article class="card" data-category="Other" data-search="e plus coil 0.3 ohm other ">
+        <!-- TO ADD A PRODUCT IMAGE:
+             Replace the text inside .image-placeholder with:
+             <img src="YOUR-IMAGE-URL-HERE" alt="E plus coil 0.3 Ohm">
+        -->
+        <div class="image-placeholder"><span>ADD IMAGE</span></div>
+        <div class="card-body">
+          <div class="category">Other</div>
+          <h3>E plus coil 0.3 Ohm</h3>
+          <div class="price">R70</div>
+          
+          <div class="store">Normally carried at Stoomtrein Vapers</div>
+        </div>
+      </article>
+    
+      <article class="card" data-category="Coils" data-search="eco nano 0.6 ohm coils ">
+        <!-- TO ADD A PRODUCT IMAGE:
+             Replace the text inside .image-placeholder with:
+             <img src="YOUR-IMAGE-URL-HERE" alt="Eco nano 0.6 ohm">
+        -->
+        <div class="image-placeholder"><span>ADD IMAGE</span></div>
+        <div class="card-body">
+          <div class="category">Coils</div>
+          <h3>Eco nano 0.6 ohm</h3>
+          <div class="price">R70</div>
+          
+          <div class="store">Normally carried at Stoomtrein Vapers</div>
+        </div>
+      </article>
+    
+      <article class="card" data-category="Coils" data-search="eco nano 0.8 ohm coils ">
+        <!-- TO ADD A PRODUCT IMAGE:
+             Replace the text inside .image-placeholder with:
+             <img src="YOUR-IMAGE-URL-HERE" alt="Eco nano 0.8 ohm">
+        -->
+        <div class="image-placeholder"><span>ADD IMAGE</span></div>
+        <div class="card-body">
+          <div class="category">Coils</div>
+          <h3>Eco nano 0.8 ohm</h3>
+          <div class="price">R70</div>
+          
+          <div class="store">Normally carried at Stoomtrein Vapers</div>
+        </div>
+      </article>
+    
+      <article class="card" data-category="Other" data-search="elfbar 16k ew pod system pods other cola ice • bluerazz ice">
+        <!-- TO ADD A PRODUCT IMAGE:
+             Replace the text inside .image-placeholder with:
+             <img src="YOUR-IMAGE-URL-HERE" alt="Elfbar 16k EW pod system pods">
+        -->
+        <div class="image-placeholder"><span>ADD IMAGE</span></div>
+        <div class="card-body">
+          <div class="category">Other</div>
+          <h3>Elfbar 16k EW pod system pods</h3>
+          <div class="price">R280</div>
+          <div class="options"><strong>Options:</strong> Cola ice • Bluerazz ice</div>
+          <div class="store">Normally carried at Stoomtrein Vapers</div>
+        </div>
+      </article>
+    
+      <article class="card" data-category="Disposable" data-search="elfbar 18k disposable blueberry razz lemon • strawberry grape • cherry peach lemonade • cranberry • peach ice">
+        <!-- TO ADD A PRODUCT IMAGE:
+             Replace the text inside .image-placeholder with:
+             <img src="YOUR-IMAGE-URL-HERE" alt="Elfbar 18k">
+        -->
+        <div class="image-placeholder"><span>ADD IMAGE</span></div>
+        <div class="card-body">
+          <div class="category">Disposable</div>
+          <h3>Elfbar 18k</h3>
+          <div class="price">R340</div>
+          <div class="options"><strong>Options:</strong> Blueberry razz lemon • Strawberry grape • Cherry peach lemonade • Cranberry • Peach ice</div>
+          <div class="store">Normally carried at Stoomtrein Vapers</div>
+        </div>
+      </article>
+    
+      <article class="card" data-category="Other" data-search="freebase nic 2mg other ">
+        <!-- TO ADD A PRODUCT IMAGE:
+             Replace the text inside .image-placeholder with:
+             <img src="YOUR-IMAGE-URL-HERE" alt="Freebase Nic 2mg">
+        -->
+        <div class="image-placeholder"><span>ADD IMAGE</span></div>
+        <div class="card-body">
+          <div class="category">Other</div>
+          <h3>Freebase Nic 2mg</h3>
+          <div class="price">R0</div>
+          
+          <div class="store">Normally carried at Stoomtrein Vapers</div>
+        </div>
+      </article>
+    
+      <article class="card" data-category="Other" data-search="freebase nic 3mg other ">
+        <!-- TO ADD A PRODUCT IMAGE:
+             Replace the text inside .image-placeholder with:
+             <img src="YOUR-IMAGE-URL-HERE" alt="Freebase Nic 3mg">
+        -->
+        <div class="image-placeholder"><span>ADD IMAGE</span></div>
+        <div class="card-body">
+          <div class="category">Other</div>
+          <h3>Freebase Nic 3mg</h3>
+          <div class="price">R0</div>
+          
+          <div class="store">Normally carried at Stoomtrein Vapers</div>
+        </div>
+      </article>
+    
+      <article class="card" data-category="Other" data-search="freebase nic 5mg other ">
+        <!-- TO ADD A PRODUCT IMAGE:
+             Replace the text inside .image-placeholder with:
+             <img src="YOUR-IMAGE-URL-HERE" alt="Freebase Nic 5mg">
+        -->
+        <div class="image-placeholder"><span>ADD IMAGE</span></div>
+        <div class="card-body">
+          <div class="category">Other</div>
+          <h3>Freebase Nic 5mg</h3>
+          <div class="price">R0</div>
+          
+          <div class="store">Normally carried at Stoomtrein Vapers</div>
+        </div>
+      </article>
+    
+      <article class="card" data-category="Other" data-search="freebase nic 6mg other ">
+        <!-- TO ADD A PRODUCT IMAGE:
+             Replace the text inside .image-placeholder with:
+             <img src="YOUR-IMAGE-URL-HERE" alt="Freebase Nic 6mg">
+        -->
+        <div class="image-placeholder"><span>ADD IMAGE</span></div>
+        <div class="card-body">
+          <div class="category">Other</div>
+          <h3>Freebase Nic 6mg</h3>
+          <div class="price">R0</div>
+          
+          <div class="store">Normally carried at Stoomtrein Vapers</div>
+        </div>
+      </article>
+    
+      <article class="card" data-category="Other" data-search="froot nic salt other mango and orange • cranberry cooler • litchi">
+        <!-- TO ADD A PRODUCT IMAGE:
+             Replace the text inside .image-placeholder with:
+             <img src="YOUR-IMAGE-URL-HERE" alt="Froot nic salt">
+        -->
+        <div class="image-placeholder"><span>ADD IMAGE</span></div>
+        <div class="card-body">
+          <div class="category">Other</div>
+          <h3>Froot nic salt</h3>
+          <div class="price">R270</div>
+          <div class="options"><strong>Options:</strong> Mango and orange • Cranberry cooler • Litchi</div>
+          <div class="store">Normally carried at Stoomtrein Vapers</div>
+        </div>
+      </article>
+    
+      <article class="card" data-category="Coils" data-search="gpp 0.4 ohm coils ">
+        <!-- TO ADD A PRODUCT IMAGE:
+             Replace the text inside .image-placeholder with:
+             <img src="YOUR-IMAGE-URL-HERE" alt="GPP 0.4 ohm">
+        -->
+        <div class="image-placeholder"><span>ADD IMAGE</span></div>
+        <div class="card-body">
+          <div class="category">Coils</div>
+          <h3>GPP 0.4 ohm</h3>
+          <div class="price">R70</div>
+          
+          <div class="store">Normally carried at Stoomtrein Vapers</div>
+        </div>
+      </article>
+    
+      <article class="card" data-category="Coils" data-search="gpp 0.6 ohm coils ">
+        <!-- TO ADD A PRODUCT IMAGE:
+             Replace the text inside .image-placeholder with:
+             <img src="YOUR-IMAGE-URL-HERE" alt="GPP 0.6 ohm">
+        -->
+        <div class="image-placeholder"><span>ADD IMAGE</span></div>
+        <div class="card-body">
+          <div class="category">Coils</div>
+          <h3>GPP 0.6 ohm</h3>
+          <div class="price">R70</div>
+          
+          <div class="store">Normally carried at Stoomtrein Vapers</div>
+        </div>
+      </article>
+    
+      <article class="card" data-category="Other" data-search="gtx 0.6 ohm other ">
+        <!-- TO ADD A PRODUCT IMAGE:
+             Replace the text inside .image-placeholder with:
+             <img src="YOUR-IMAGE-URL-HERE" alt="GTX 0.6 Ohm">
+        -->
+        <div class="image-placeholder"><span>ADD IMAGE</span></div>
+        <div class="card-body">
+          <div class="category">Other</div>
+          <h3>GTX 0.6 Ohm</h3>
+          <div class="price">R70</div>
+          
+          <div class="store">Normally carried at Stoomtrein Vapers</div>
+        </div>
+      </article>
+    
+      <article class="card" data-category="Other" data-search="golisi battery other ">
+        <!-- TO ADD A PRODUCT IMAGE:
+             Replace the text inside .image-placeholder with:
+             <img src="YOUR-IMAGE-URL-HERE" alt="Golisi battery">
+        -->
+        <div class="image-placeholder"><span>ADD IMAGE</span></div>
+        <div class="card-body">
+          <div class="category">Other</div>
+          <h3>Golisi battery</h3>
+          <div class="price">R130</div>
+          
+          <div class="store">Normally carried at Stoomtrein Vapers</div>
+        </div>
+      </article>
+    
+      <article class="card" data-category="Other" data-search="gumble wicks nic salt other ">
+        <!-- TO ADD A PRODUCT IMAGE:
+             Replace the text inside .image-placeholder with:
+             <img src="YOUR-IMAGE-URL-HERE" alt="Gumble wicks nic salt">
+        -->
+        <div class="image-placeholder"><span>ADD IMAGE</span></div>
+        <div class="card-body">
+          <div class="category">Other</div>
+          <h3>Gumble wicks nic salt</h3>
+          <div class="price">R270</div>
+          
+          <div class="store">Normally carried at Stoomtrein Vapers</div>
+        </div>
+      </article>
+    
+      <article class="card" data-category="Other" data-search="hats other ">
+        <!-- TO ADD A PRODUCT IMAGE:
+             Replace the text inside .image-placeholder with:
+             <img src="YOUR-IMAGE-URL-HERE" alt="Hats">
+        -->
+        <div class="image-placeholder"><span>ADD IMAGE</span></div>
+        <div class="card-body">
+          <div class="category">Other</div>
+          <h3>Hats</h3>
+          <div class="price">R200</div>
+          
+          <div class="store">Normally carried at Stoomtrein Vapers</div>
+        </div>
+      </article>
+    
+      <article class="card" data-category="Other" data-search="hubbly flavor other ">
+        <!-- TO ADD A PRODUCT IMAGE:
+             Replace the text inside .image-placeholder with:
+             <img src="YOUR-IMAGE-URL-HERE" alt="Hubbly Flavor">
+        -->
+        <div class="image-placeholder"><span>ADD IMAGE</span></div>
+        <div class="card-body">
+          <div class="category">Other</div>
+          <h3>Hubbly Flavor</h3>
+          <div class="price">R44</div>
+          
+          <div class="store">Normally carried at Stoomtrein Vapers</div>
+        </div>
+      </article>
+    
+      <article class="card" data-category="Other" data-search="hubbly coal other ">
+        <!-- TO ADD A PRODUCT IMAGE:
+             Replace the text inside .image-placeholder with:
+             <img src="YOUR-IMAGE-URL-HERE" alt="Hubbly coal">
+        -->
+        <div class="image-placeholder"><span>ADD IMAGE</span></div>
+        <div class="card-body">
+          <div class="category">Other</div>
+          <h3>Hubbly coal</h3>
+          <div class="price">R20</div>
+          
+          <div class="store">Normally carried at Stoomtrein Vapers</div>
+        </div>
+      </article>
+    
+      <article class="card" data-category="Other" data-search="hubbly foil other ">
+        <!-- TO ADD A PRODUCT IMAGE:
+             Replace the text inside .image-placeholder with:
+             <img src="YOUR-IMAGE-URL-HERE" alt="Hubbly foil">
+        -->
+        <div class="image-placeholder"><span>ADD IMAGE</span></div>
+        <div class="card-body">
+          <div class="category">Other</div>
+          <h3>Hubbly foil</h3>
+          <div class="price">R5</div>
+          
+          <div class="store">Normally carried at Stoomtrein Vapers</div>
+        </div>
+      </article>
+    
+      <article class="card" data-category="Other" data-search="ice shots other ">
+        <!-- TO ADD A PRODUCT IMAGE:
+             Replace the text inside .image-placeholder with:
+             <img src="YOUR-IMAGE-URL-HERE" alt="Ice shots">
+        -->
+        <div class="image-placeholder"><span>ADD IMAGE</span></div>
+        <div class="card-body">
+          <div class="category">Other</div>
+          <h3>Ice shots</h3>
+          <div class="price">R65</div>
+          
+          <div class="store">Normally carried at Stoomtrein Vapers</div>
+        </div>
+      </article>
+    
+      <article class="card" data-category="Freebase" data-search="jel freebase freebase flip • nectar • arabica latte • royal dluxe • nutty arabica dunked edition • papaya • nutty crunchy cookie">
+        <!-- TO ADD A PRODUCT IMAGE:
+             Replace the text inside .image-placeholder with:
+             <img src="YOUR-IMAGE-URL-HERE" alt="JEL Freebase">
+        -->
+        <div class="image-placeholder"><span>ADD IMAGE</span></div>
+        <div class="card-body">
+          <div class="category">Freebase</div>
+          <h3>JEL Freebase</h3>
+          <div class="price">R400</div>
+          <div class="options"><strong>Options:</strong> Flip • Nectar • Arabica latte • Royal dluxe • Nutty arabica dunked edition • Papaya • Nutty crunchy cookie</div>
+          <div class="store">Normally carried at Stoomtrein Vapers</div>
+        </div>
+      </article>
+    
+      <article class="card" data-category="Other" data-search="jack parow x pods 30k other pink melkie • lychee juice • peach tropical • cherry sucker • granadilla lolly">
+        <!-- TO ADD A PRODUCT IMAGE:
+             Replace the text inside .image-placeholder with:
+             <img src="YOUR-IMAGE-URL-HERE" alt="Jack Parow X Pods 30K">
+        -->
+        <div class="image-placeholder"><span>ADD IMAGE</span></div>
+        <div class="card-body">
+          <div class="category">Other</div>
+          <h3>Jack Parow X Pods 30K</h3>
+          <div class="price">R260</div>
+          <div class="options"><strong>Options:</strong> Pink Melkie • Lychee Juice • Peach Tropical • Cherry Sucker • Granadilla Lolly</div>
+          <div class="store">Normally carried at Stoomtrein Vapers</div>
+        </div>
+      </article>
+    
+      <article class="card" data-category="Other" data-search="jack parrow x pods 12k other granadilla • red mamba • peach • lychee • cherry">
+        <!-- TO ADD A PRODUCT IMAGE:
+             Replace the text inside .image-placeholder with:
+             <img src="YOUR-IMAGE-URL-HERE" alt="Jack Parrow X Pods 12K">
+        -->
+        <div class="image-placeholder"><span>ADD IMAGE</span></div>
+        <div class="card-body">
+          <div class="category">Other</div>
+          <h3>Jack Parrow X Pods 12K</h3>
+          <div class="price">R180</div>
+          <div class="options"><strong>Options:</strong> Granadilla • Red Mamba • Peach • Lychee • cherry</div>
+          <div class="store">Normally carried at Stoomtrein Vapers</div>
+        </div>
+      </article>
+    
+      <article class="card" data-category="Other" data-search="jack parrow x sleeves other rose gold • zebra • leopard print">
+        <!-- TO ADD A PRODUCT IMAGE:
+             Replace the text inside .image-placeholder with:
+             <img src="YOUR-IMAGE-URL-HERE" alt="Jack Parrow X sleeves">
+        -->
+        <div class="image-placeholder"><span>ADD IMAGE</span></div>
+        <div class="card-body">
+          <div class="category">Other</div>
+          <h3>Jack Parrow X sleeves</h3>
+          <div class="price">R80</div>
+          <div class="options"><strong>Options:</strong> Rose Gold • Zebra • Leopard Print</div>
+          <div class="store">Normally carried at Stoomtrein Vapers</div>
+        </div>
+      </article>
+    
+      <article class="card" data-category="Other" data-search="jack parrow x pod system kit other peach tropical • cherry • lychee • granadilla">
+        <!-- TO ADD A PRODUCT IMAGE:
+             Replace the text inside .image-placeholder with:
+             <img src="YOUR-IMAGE-URL-HERE" alt="Jack Parrow x pod system Kit">
+        -->
+        <div class="image-placeholder"><span>ADD IMAGE</span></div>
+        <div class="card-body">
+          <div class="category">Other</div>
+          <h3>Jack Parrow x pod system Kit</h3>
+          <div class="price">R320</div>
+          <div class="options"><strong>Options:</strong> Peach Tropical • Cherry • Lychee • Granadilla</div>
+          <div class="store">Normally carried at Stoomtrein Vapers</div>
+        </div>
+      </article>
+    
+      <article class="card" data-category="Other" data-search="jack parrow/bewolkpouches other mint • black ice • black cherry • wicks">
+        <!-- TO ADD A PRODUCT IMAGE:
+             Replace the text inside .image-placeholder with:
+             <img src="YOUR-IMAGE-URL-HERE" alt="Jack Parrow/bewolkpouches">
+        -->
+        <div class="image-placeholder"><span>ADD IMAGE</span></div>
+        <div class="card-body">
+          <div class="category">Other</div>
+          <h3>Jack Parrow/bewolkpouches</h3>
+          <div class="price">R80</div>
+          <div class="options"><strong>Options:</strong> Mint • Black ice • Black cherry • Wicks</div>
+          <div class="store">Normally carried at Stoomtrein Vapers</div>
+        </div>
+      </article>
+    
+      <article class="card" data-category="Other" data-search="jay jays other ">
+        <!-- TO ADD A PRODUCT IMAGE:
+             Replace the text inside .image-placeholder with:
+             <img src="YOUR-IMAGE-URL-HERE" alt="Jay Jays">
+        -->
+        <div class="image-placeholder"><span>ADD IMAGE</span></div>
+        <div class="card-body">
+          <div class="category">Other</div>
+          <h3>Jay Jays</h3>
+          <div class="price">R250</div>
+          
+          <div class="store">Normally carried at Stoomtrein Vapers</div>
+        </div>
+      </article>
+    
+      <article class="card" data-category="Other" data-search="luxe q coils  0.6 other ">
+        <!-- TO ADD A PRODUCT IMAGE:
+             Replace the text inside .image-placeholder with:
+             <img src="YOUR-IMAGE-URL-HERE" alt="Luxe Q coils  0.6">
+        -->
+        <div class="image-placeholder"><span>ADD IMAGE</span></div>
+        <div class="card-body">
+          <div class="category">Other</div>
+          <h3>Luxe Q coils  0.6</h3>
+          <div class="price">R70</div>
+          
+          <div class="store">Normally carried at Stoomtrein Vapers</div>
+        </div>
+      </article>
+    
+      <article class="card" data-category="Coils" data-search="luxe x 0.6 ohm coils ">
+        <!-- TO ADD A PRODUCT IMAGE:
+             Replace the text inside .image-placeholder with:
+             <img src="YOUR-IMAGE-URL-HERE" alt="Luxe x 0.6 ohm">
+        -->
+        <div class="image-placeholder"><span>ADD IMAGE</span></div>
+        <div class="card-body">
+          <div class="category">Coils</div>
+          <h3>Luxe x 0.6 ohm</h3>
+          <div class="price">R70</div>
+          
+          <div class="store">Normally carried at Stoomtrein Vapers</div>
+        </div>
+      </article>
+    
+      <article class="card" data-category="Coils" data-search="luxe x 0.8 ohm coils ">
+        <!-- TO ADD A PRODUCT IMAGE:
+             Replace the text inside .image-placeholder with:
+             <img src="YOUR-IMAGE-URL-HERE" alt="Luxe x 0.8 ohm">
+        -->
+        <div class="image-placeholder"><span>ADD IMAGE</span></div>
+        <div class="card-body">
+          <div class="category">Coils</div>
+          <h3>Luxe x 0.8 ohm</h3>
+          <div class="price">R70</div>
+          
+          <div class="store">Normally carried at Stoomtrein Vapers</div>
+        </div>
+      </article>
+    
+      <article class="card" data-category="Other" data-search="majestic vapor nic salt other ju-long • ying-tao • lee-chi • orochi • shangri-la • mizuchi">
+        <!-- TO ADD A PRODUCT IMAGE:
+             Replace the text inside .image-placeholder with:
+             <img src="YOUR-IMAGE-URL-HERE" alt="Majestic vapor nic salt">
+        -->
+        <div class="image-placeholder"><span>ADD IMAGE</span></div>
+        <div class="card-body">
+          <div class="category">Other</div>
+          <h3>Majestic vapor nic salt</h3>
+          <div class="price">R250</div>
+          <div class="options"><strong>Options:</strong> Ju-long • Ying-tao • Lee-chi • Orochi • Shangri-la • Mizuchi</div>
+          <div class="store">Normally carried at Stoomtrein Vapers</div>
+        </div>
+      </article>
+    
+      <article class="card" data-category="Other" data-search="memory lane other lane cola • zing pop • smoochies • gobba balls">
+        <!-- TO ADD A PRODUCT IMAGE:
+             Replace the text inside .image-placeholder with:
+             <img src="YOUR-IMAGE-URL-HERE" alt="Memory Lane">
+        -->
+        <div class="image-placeholder"><span>ADD IMAGE</span></div>
+        <div class="card-body">
+          <div class="category">Other</div>
+          <h3>Memory Lane</h3>
+          <div class="price">R250</div>
+          <div class="options"><strong>Options:</strong> Lane Cola • Zing Pop • Smoochies • Gobba Balls</div>
+          <div class="store">Normally carried at Stoomtrein Vapers</div>
+        </div>
+      </article>
+    
+      <article class="card" data-category="Other" data-search="misfit nic salt juice other sour apple lime • kiwi peach • grape cherry • cranberry strawberry raspberry • blackberry pomegranate raspberry • triple grape • krispy treats • marshmallow • bischoff cheesecake • butterscotch custard • blackberry cherry raspberry • mango peach apricot • blueberry cherry cranberry • blueberry blackcurrant banana • lychee guava cherry • strawberry lychee • pineapple lime • strawberry cherry raspberry • cherry fizz">
+        <!-- TO ADD A PRODUCT IMAGE:
+             Replace the text inside .image-placeholder with:
+             <img src="YOUR-IMAGE-URL-HERE" alt="Misfit nic salt juice">
+        -->
+        <div class="image-placeholder"><span>ADD IMAGE</span></div>
+        <div class="card-body">
+          <div class="category">Other</div>
+          <h3>Misfit nic salt juice</h3>
+          <div class="price">R280</div>
+          <div class="options"><strong>Options:</strong> Sour Apple Lime • Kiwi Peach • Grape Cherry • Cranberry Strawberry Raspberry • Blackberry Pomegranate Raspberry • Triple Grape • Krispy Treats • Marshmallow • Bischoff Cheesecake • Butterscotch Custard • Blackberry Cherry Raspberry • Mango Peach Apricot • Blueberry Cherry Cranberry • Blueberry Blackcurrant Banana • Lychee Guava Cherry • Strawberry Lychee • Pineapple Lime • Strawberry Cherry Raspberry • Cherry Fizz</div>
+          <div class="store">Normally carried at Stoomtrein Vapers</div>
+        </div>
+      </article>
+    
+      <article class="card" data-category="Other" data-search="mistify nic salt other delightful gumball • the riddler • summer fugitive • total blackout • fruit o holic">
+        <!-- TO ADD A PRODUCT IMAGE:
+             Replace the text inside .image-placeholder with:
+             <img src="YOUR-IMAGE-URL-HERE" alt="Mistify nic salt">
+        -->
+        <div class="image-placeholder"><span>ADD IMAGE</span></div>
+        <div class="card-body">
+          <div class="category">Other</div>
+          <h3>Mistify nic salt</h3>
+          <div class="price">R240</div>
+          <div class="options"><strong>Options:</strong> Delightful gumball • The riddler • Summer fugitive • Total blackout • Fruit o holic</div>
+          <div class="store">Normally carried at Stoomtrein Vapers</div>
+        </div>
+      </article>
+    
+      <article class="card" data-category="Other" data-search="mntl nic/salt other passionfruit • mint • grape • wicks • litchi • blue berry">
+        <!-- TO ADD A PRODUCT IMAGE:
+             Replace the text inside .image-placeholder with:
+             <img src="YOUR-IMAGE-URL-HERE" alt="Mntl nic/salt">
+        -->
+        <div class="image-placeholder"><span>ADD IMAGE</span></div>
+        <div class="card-body">
+          <div class="category">Other</div>
+          <h3>Mntl nic/salt</h3>
+          <div class="price">R320</div>
+          <div class="options"><strong>Options:</strong> Passionfruit • Mint • Grape • Wicks • Litchi • Blue berry</div>
+          <div class="store">Normally carried at Stoomtrein Vapers</div>
+        </div>
+      </article>
+    
+      <article class="card" data-category="Freebase" data-search="moist freebase freebase lush litchi • gushing grape • pumpin peach • kinky kiwi • crushin grape • bouncing berry • razzle raspberry">
+        <!-- TO ADD A PRODUCT IMAGE:
+             Replace the text inside .image-placeholder with:
+             <img src="YOUR-IMAGE-URL-HERE" alt="Moist freebase">
+        -->
+        <div class="image-placeholder"><span>ADD IMAGE</span></div>
+        <div class="card-body">
+          <div class="category">Freebase</div>
+          <h3>Moist freebase</h3>
+          <div class="price">R290</div>
+          <div class="options"><strong>Options:</strong> Lush litchi • Gushing grape • Pumpin peach • Kinky kiwi • Crushin grape • Bouncing berry • Razzle raspberry</div>
+          <div class="store">Normally carried at Stoomtrein Vapers</div>
+        </div>
+      </article>
+    
+      <article class="card" data-category="Other" data-search="moist nic salt other lush litchi • crushin currant • razzle raspberry • pumpin peach • kinky kiwi • bouncing berry">
+        <!-- TO ADD A PRODUCT IMAGE:
+             Replace the text inside .image-placeholder with:
+             <img src="YOUR-IMAGE-URL-HERE" alt="Moist nic salt">
+        -->
+        <div class="image-placeholder"><span>ADD IMAGE</span></div>
+        <div class="card-body">
+          <div class="category">Other</div>
+          <h3>Moist nic salt</h3>
+          <div class="price">R200</div>
+          <div class="options"><strong>Options:</strong> Lush litchi • Crushin currant • Razzle raspberry • Pumpin peach • Kinky kiwi • Bouncing berry</div>
+          <div class="store">Normally carried at Stoomtrein Vapers</div>
+        </div>
+      </article>
+    
+      <article class="card" data-category="Other" data-search="mooch nic salts other breakfast punch • peach • pineapple • litchi • just berries • juicy bubblegum • blackcurrant">
+        <!-- TO ADD A PRODUCT IMAGE:
+             Replace the text inside .image-placeholder with:
+             <img src="YOUR-IMAGE-URL-HERE" alt="Mooch nic salts">
+        -->
+        <div class="image-placeholder"><span>ADD IMAGE</span></div>
+        <div class="card-body">
+          <div class="category">Other</div>
+          <h3>Mooch nic salts</h3>
+          <div class="price">R280</div>
+          <div class="options"><strong>Options:</strong> Breakfast punch • Peach • Pineapple • Litchi • Just berries • Juicy bubblegum • Blackcurrant</div>
+          <div class="store">Normally carried at Stoomtrein Vapers</div>
+        </div>
+      </article>
+    
+      <article class="card" data-category="Freebase" data-search="ndulge freebase freebase custard vandetta • watermelon lush • mango cardinal • pineapple trivia • zesty zen • peach paradise">
+        <!-- TO ADD A PRODUCT IMAGE:
+             Replace the text inside .image-placeholder with:
+             <img src="YOUR-IMAGE-URL-HERE" alt="Ndulge freebase">
+        -->
+        <div class="image-placeholder"><span>ADD IMAGE</span></div>
+        <div class="card-body">
+          <div class="category">Freebase</div>
+          <h3>Ndulge freebase</h3>
+          <div class="price">R300</div>
+          <div class="options"><strong>Options:</strong> Custard vandetta • Watermelon lush • Mango cardinal • Pineapple trivia • Zesty zen • Peach paradise</div>
+          <div class="store">Normally carried at Stoomtrein Vapers</div>
+        </div>
+      </article>
+    
+      <article class="card" data-category="Other" data-search="ndulge nic salt other pineapple trivia • peach paradise • mango cardinal • zesty zen">
+        <!-- TO ADD A PRODUCT IMAGE:
+             Replace the text inside .image-placeholder with:
+             <img src="YOUR-IMAGE-URL-HERE" alt="Ndulge nic salt">
+        -->
+        <div class="image-placeholder"><span>ADD IMAGE</span></div>
+        <div class="card-body">
+          <div class="category">Other</div>
+          <h3>Ndulge nic salt</h3>
+          <div class="price">R250</div>
+          <div class="options"><strong>Options:</strong> Pineapple trivia • Peach paradise • Mango cardinal • Zesty zen</div>
+          <div class="store">Normally carried at Stoomtrein Vapers</div>
+        </div>
+      </article>
+    
+      <article class="card" data-category="Other" data-search="nic shot 20mg/30ml other ">
+        <!-- TO ADD A PRODUCT IMAGE:
+             Replace the text inside .image-placeholder with:
+             <img src="YOUR-IMAGE-URL-HERE" alt="Nic Shot 20mg/30ml">
+        -->
+        <div class="image-placeholder"><span>ADD IMAGE</span></div>
+        <div class="card-body">
+          <div class="category">Other</div>
+          <h3>Nic Shot 20mg/30ml</h3>
+          <div class="price">R0</div>
+          
+          <div class="store">Normally carried at Stoomtrein Vapers</div>
+        </div>
+      </article>
+    
+      <article class="card" data-category="Other" data-search="nic shot 25mg/30ml other ">
+        <!-- TO ADD A PRODUCT IMAGE:
+             Replace the text inside .image-placeholder with:
+             <img src="YOUR-IMAGE-URL-HERE" alt="Nic Shot 25mg/30ml">
+        -->
+        <div class="image-placeholder"><span>ADD IMAGE</span></div>
+        <div class="card-body">
+          <div class="category">Other</div>
+          <h3>Nic Shot 25mg/30ml</h3>
+          <div class="price">R0</div>
+          
+          <div class="store">Normally carried at Stoomtrein Vapers</div>
+        </div>
+      </article>
+    
+      <article class="card" data-category="Other" data-search="nic shot 40mg/15ml other ">
+        <!-- TO ADD A PRODUCT IMAGE:
+             Replace the text inside .image-placeholder with:
+             <img src="YOUR-IMAGE-URL-HERE" alt="Nic Shot 40mg/15ml">
+        -->
+        <div class="image-placeholder"><span>ADD IMAGE</span></div>
+        <div class="card-body">
+          <div class="category">Other</div>
+          <h3>Nic Shot 40mg/15ml</h3>
+          <div class="price">R0</div>
+          
+          <div class="store">Normally carried at Stoomtrein Vapers</div>
+        </div>
+      </article>
+    
+      <article class="card" data-category="Other" data-search="nic shot 20mg/15ml other ">
+        <!-- TO ADD A PRODUCT IMAGE:
+             Replace the text inside .image-placeholder with:
+             <img src="YOUR-IMAGE-URL-HERE" alt="Nic shot 20mg/15ml">
+        -->
+        <div class="image-placeholder"><span>ADD IMAGE</span></div>
+        <div class="card-body">
+          <div class="category">Other</div>
+          <h3>Nic shot 20mg/15ml</h3>
+          <div class="price">R0</div>
+          
+          <div class="store">Normally carried at Stoomtrein Vapers</div>
+        </div>
+      </article>
+    
+      <article class="card" data-category="Other" data-search="nic shot 25mg/15ml other ">
+        <!-- TO ADD A PRODUCT IMAGE:
+             Replace the text inside .image-placeholder with:
+             <img src="YOUR-IMAGE-URL-HERE" alt="Nic shot 25mg/15ml">
+        -->
+        <div class="image-placeholder"><span>ADD IMAGE</span></div>
+        <div class="card-body">
+          <div class="category">Other</div>
+          <h3>Nic shot 25mg/15ml</h3>
+          <div class="price">R0</div>
+          
+          <div class="store">Normally carried at Stoomtrein Vapers</div>
+        </div>
+      </article>
+    
+      <article class="card" data-category="Other" data-search="nic shot 30mg/15ml other ">
+        <!-- TO ADD A PRODUCT IMAGE:
+             Replace the text inside .image-placeholder with:
+             <img src="YOUR-IMAGE-URL-HERE" alt="Nic shot 30mg/15ml">
+        -->
+        <div class="image-placeholder"><span>ADD IMAGE</span></div>
+        <div class="card-body">
+          <div class="category">Other</div>
+          <h3>Nic shot 30mg/15ml</h3>
+          <div class="price">R0</div>
+          
+          <div class="store">Normally carried at Stoomtrein Vapers</div>
+        </div>
+      </article>
+    
+      <article class="card" data-category="Other" data-search="nic shot 30mg/30ml other ">
+        <!-- TO ADD A PRODUCT IMAGE:
+             Replace the text inside .image-placeholder with:
+             <img src="YOUR-IMAGE-URL-HERE" alt="Nic shot 30mg/30ml">
+        -->
+        <div class="image-placeholder"><span>ADD IMAGE</span></div>
+        <div class="card-body">
+          <div class="category">Other</div>
+          <h3>Nic shot 30mg/30ml</h3>
+          <div class="price">R0</div>
+          
+          <div class="store">Normally carried at Stoomtrein Vapers</div>
+        </div>
+      </article>
+    
+      <article class="card" data-category="Other" data-search="nic shot 35mg/15ml other ">
+        <!-- TO ADD A PRODUCT IMAGE:
+             Replace the text inside .image-placeholder with:
+             <img src="YOUR-IMAGE-URL-HERE" alt="Nic shot 35mg/15ml">
+        -->
+        <div class="image-placeholder"><span>ADD IMAGE</span></div>
+        <div class="card-body">
+          <div class="category">Other</div>
+          <h3>Nic shot 35mg/15ml</h3>
+          <div class="price">R0</div>
+          
+          <div class="store">Normally carried at Stoomtrein Vapers</div>
+        </div>
+      </article>
+    
+      <article class="card" data-category="Other" data-search="nic shot 35mg/30ml other ">
+        <!-- TO ADD A PRODUCT IMAGE:
+             Replace the text inside .image-placeholder with:
+             <img src="YOUR-IMAGE-URL-HERE" alt="Nic shot 35mg/30ml">
+        -->
+        <div class="image-placeholder"><span>ADD IMAGE</span></div>
+        <div class="card-body">
+          <div class="category">Other</div>
+          <h3>Nic shot 35mg/30ml</h3>
+          <div class="price">R0</div>
+          
+          <div class="store">Normally carried at Stoomtrein Vapers</div>
+        </div>
+      </article>
+    
+      <article class="card" data-category="Other" data-search="nic shot 40mg/30ml other ">
+        <!-- TO ADD A PRODUCT IMAGE:
+             Replace the text inside .image-placeholder with:
+             <img src="YOUR-IMAGE-URL-HERE" alt="Nic shot 40mg/30ml">
+        -->
+        <div class="image-placeholder"><span>ADD IMAGE</span></div>
+        <div class="card-body">
+          <div class="category">Other</div>
+          <h3>Nic shot 40mg/30ml</h3>
+          <div class="price">R0</div>
+          
+          <div class="store">Normally carried at Stoomtrein Vapers</div>
+        </div>
+      </article>
+    
+      <article class="card" data-category="Other" data-search="nic shot 50mg/15ml other ">
+        <!-- TO ADD A PRODUCT IMAGE:
+             Replace the text inside .image-placeholder with:
+             <img src="YOUR-IMAGE-URL-HERE" alt="Nic shot 50mg/15ml">
+        -->
+        <div class="image-placeholder"><span>ADD IMAGE</span></div>
+        <div class="card-body">
+          <div class="category">Other</div>
+          <h3>Nic shot 50mg/15ml</h3>
+          <div class="price">R0</div>
+          
+          <div class="store">Normally carried at Stoomtrein Vapers</div>
+        </div>
+      </article>
+    
+      <article class="card" data-category="Other" data-search="nic shot 50mg/30ml other ">
+        <!-- TO ADD A PRODUCT IMAGE:
+             Replace the text inside .image-placeholder with:
+             <img src="YOUR-IMAGE-URL-HERE" alt="Nic shot 50mg/30ml">
+        -->
+        <div class="image-placeholder"><span>ADD IMAGE</span></div>
+        <div class="card-body">
+          <div class="category">Other</div>
+          <h3>Nic shot 50mg/30ml</h3>
+          <div class="price">R0</div>
+          
+          <div class="store">Normally carried at Stoomtrein Vapers</div>
+        </div>
+      </article>
+    
+      <article class="card" data-category="Other" data-search="nulix nic salt other cookie ice cream sandwich • blackcurrant grapefruit • mango peach • berry lime">
+        <!-- TO ADD A PRODUCT IMAGE:
+             Replace the text inside .image-placeholder with:
+             <img src="YOUR-IMAGE-URL-HERE" alt="Nulix nic salt">
+        -->
+        <div class="image-placeholder"><span>ADD IMAGE</span></div>
+        <div class="card-body">
+          <div class="category">Other</div>
+          <h3>Nulix nic salt</h3>
+          <div class="price">R250</div>
+          <div class="options"><strong>Options:</strong> Cookie ice cream sandwich • Blackcurrant grapefruit • Mango peach • Berry lime</div>
+          <div class="store">Normally carried at Stoomtrein Vapers</div>
+        </div>
+      </article>
+    
+      <article class="card" data-category="Other" data-search="old skool nic salt other slushie • coffee cake • moonlight • sunset">
+        <!-- TO ADD A PRODUCT IMAGE:
+             Replace the text inside .image-placeholder with:
+             <img src="YOUR-IMAGE-URL-HERE" alt="Old skool nic salt">
+        -->
+        <div class="image-placeholder"><span>ADD IMAGE</span></div>
+        <div class="card-body">
+          <div class="category">Other</div>
+          <h3>Old skool nic salt</h3>
+          <div class="price">R250</div>
+          <div class="options"><strong>Options:</strong> Slushie • Coffee cake • Moonlight • Sunset</div>
+          <div class="store">Normally carried at Stoomtrein Vapers</div>
+        </div>
+      </article>
+    
+      <article class="card" data-category="Other" data-search="oxva nexlim 2 other ">
+        <!-- TO ADD A PRODUCT IMAGE:
+             Replace the text inside .image-placeholder with:
+             <img src="YOUR-IMAGE-URL-HERE" alt="Oxva Nexlim 2">
+        -->
+        <div class="image-placeholder"><span>ADD IMAGE</span></div>
+        <div class="card-body">
+          <div class="category">Other</div>
+          <h3>Oxva Nexlim 2</h3>
+          <div class="price">R600</div>
+          
+          <div class="store">Normally carried at Stoomtrein Vapers</div>
+        </div>
+      </article>
+    
+      <article class="card" data-category="Other" data-search="oxva nexlim 2 mini other ">
+        <!-- TO ADD A PRODUCT IMAGE:
+             Replace the text inside .image-placeholder with:
+             <img src="YOUR-IMAGE-URL-HERE" alt="Oxva Nexlim 2 Mini">
+        -->
+        <div class="image-placeholder"><span>ADD IMAGE</span></div>
+        <div class="card-body">
+          <div class="category">Other</div>
+          <h3>Oxva Nexlim 2 Mini</h3>
+          <div class="price">R350</div>
+          
+          <div class="store">Normally carried at Stoomtrein Vapers</div>
+        </div>
+      </article>
+    
+      <article class="card" data-category="Other" data-search="oxva nexlim coils other ">
+        <!-- TO ADD A PRODUCT IMAGE:
+             Replace the text inside .image-placeholder with:
+             <img src="YOUR-IMAGE-URL-HERE" alt="Oxva Nexlim coils">
+        -->
+        <div class="image-placeholder"><span>ADD IMAGE</span></div>
+        <div class="card-body">
+          <div class="category">Other</div>
+          <h3>Oxva Nexlim coils</h3>
+          <div class="price">R70</div>
+          
+          <div class="store">Normally carried at Stoomtrein Vapers</div>
+        </div>
+      </article>
+    
+      <article class="card" data-category="Other" data-search="oxva xlim coil 0.6 ohm other ">
+        <!-- TO ADD A PRODUCT IMAGE:
+             Replace the text inside .image-placeholder with:
+             <img src="YOUR-IMAGE-URL-HERE" alt="Oxva Xlim Coil 0.6 ohm">
+        -->
+        <div class="image-placeholder"><span>ADD IMAGE</span></div>
+        <div class="card-body">
+          <div class="category">Other</div>
+          <h3>Oxva Xlim Coil 0.6 ohm</h3>
+          <div class="price">R70</div>
+          
+          <div class="store">Normally carried at Stoomtrein Vapers</div>
+        </div>
+      </article>
+    
+      <article class="card" data-category="Other" data-search="oxva xlim go lite other gold • blue • brown • black">
+        <!-- TO ADD A PRODUCT IMAGE:
+             Replace the text inside .image-placeholder with:
+             <img src="YOUR-IMAGE-URL-HERE" alt="Oxva Xlim Go Lite">
+        -->
+        <div class="image-placeholder"><span>ADD IMAGE</span></div>
+        <div class="card-body">
+          <div class="category">Other</div>
+          <h3>Oxva Xlim Go Lite</h3>
+          <div class="price">R180</div>
+          <div class="options"><strong>Options:</strong> Gold • Blue • Brown • Black</div>
+          <div class="store">Normally carried at Stoomtrein Vapers</div>
+        </div>
+      </article>
+    
+      <article class="card" data-category="Other" data-search="oxva xlim coil 0.8 ohm other ">
+        <!-- TO ADD A PRODUCT IMAGE:
+             Replace the text inside .image-placeholder with:
+             <img src="YOUR-IMAGE-URL-HERE" alt="Oxva xlim coil 0.8 Ohm">
+        -->
+        <div class="image-placeholder"><span>ADD IMAGE</span></div>
+        <div class="card-body">
+          <div class="category">Other</div>
+          <h3>Oxva xlim coil 0.8 Ohm</h3>
+          <div class="price">R70</div>
+          
+          <div class="store">Normally carried at Stoomtrein Vapers</div>
+        </div>
+      </article>
+    
+      <article class="card" data-category="Other" data-search="p coils 0.2 other ">
+        <!-- TO ADD A PRODUCT IMAGE:
+             Replace the text inside .image-placeholder with:
+             <img src="YOUR-IMAGE-URL-HERE" alt="P coils 0.2">
+        -->
+        <div class="image-placeholder"><span>ADD IMAGE</span></div>
+        <div class="card-body">
+          <div class="category">Other</div>
+          <h3>P coils 0.2</h3>
+          <div class="price">R70</div>
+          
+          <div class="store">Normally carried at Stoomtrein Vapers</div>
+        </div>
+      </article>
+    
+      <article class="card" data-category="Other" data-search="p coils 0.4 other ">
+        <!-- TO ADD A PRODUCT IMAGE:
+             Replace the text inside .image-placeholder with:
+             <img src="YOUR-IMAGE-URL-HERE" alt="P coils 0.4">
+        -->
+        <div class="image-placeholder"><span>ADD IMAGE</span></div>
+        <div class="card-body">
+          <div class="category">Other</div>
+          <h3>P coils 0.4</h3>
+          <div class="price">R70</div>
+          
+          <div class="store">Normally carried at Stoomtrein Vapers</div>
+        </div>
+      </article>
+    
+      <article class="card" data-category="Other" data-search="pod plus 30ml nic salt other frozen blueberry cocktail • chilled cherry • pink avalanche • zero kelvin • black zest • peach ice • marvelous mango">
+        <!-- TO ADD A PRODUCT IMAGE:
+             Replace the text inside .image-placeholder with:
+             <img src="YOUR-IMAGE-URL-HERE" alt="Pod plus 30ml Nic salt">
+        -->
+        <div class="image-placeholder"><span>ADD IMAGE</span></div>
+        <div class="card-body">
+          <div class="category">Other</div>
+          <h3>Pod plus 30ml Nic salt</h3>
+          <div class="price">R140</div>
+          <div class="options"><strong>Options:</strong> Frozen Blueberry Cocktail • Chilled Cherry • Pink Avalanche • Zero Kelvin • Black Zest • Peach Ice • Marvelous Mango</div>
+          <div class="store">Normally carried at Stoomtrein Vapers</div>
+        </div>
+      </article>
+    
+      <article class="card" data-category="Other" data-search="pod plus nic salt other blue lemonade pop • lime twist • black zest • glacial grape • marvelous mango • frozen  blueberry cocktail • zero kelvin • dragon frost • raspberry lychee ice • pink avalanche • chilled cherry • banana blizzard • chew">
+        <!-- TO ADD A PRODUCT IMAGE:
+             Replace the text inside .image-placeholder with:
+             <img src="YOUR-IMAGE-URL-HERE" alt="Pod plus nic salt">
+        -->
+        <div class="image-placeholder"><span>ADD IMAGE</span></div>
+        <div class="card-body">
+          <div class="category">Other</div>
+          <h3>Pod plus nic salt</h3>
+          <div class="price">R250</div>
+          <div class="options"><strong>Options:</strong> blue lemonade pop • Lime Twist • Black Zest • Glacial Grape • Marvelous Mango • Frozen  Blueberry Cocktail • Zero kelvin • Dragon frost • Raspberry lychee ice • Pink avalanche • Chilled cherry • Banana blizzard • Chew</div>
+          <div class="store">Normally carried at Stoomtrein Vapers</div>
+        </div>
+      </article>
+    
+      <article class="card" data-category="Other" data-search="pods n salts nic salts 30ml other fresh mint">
+        <!-- TO ADD A PRODUCT IMAGE:
+             Replace the text inside .image-placeholder with:
+             <img src="YOUR-IMAGE-URL-HERE" alt="Pods n Salts Nic Salts 30ml">
+        -->
+        <div class="image-placeholder"><span>ADD IMAGE</span></div>
+        <div class="card-body">
+          <div class="category">Other</div>
+          <h3>Pods n Salts Nic Salts 30ml</h3>
+          <div class="price">R140</div>
+          <div class="options"><strong>Options:</strong> Fresh Mint</div>
+          <div class="store">Normally carried at Stoomtrein Vapers</div>
+        </div>
+      </article>
+    
+      <article class="card" data-category="Other" data-search="pods n salts nic salt 60ml other fresh mint • ry4">
+        <!-- TO ADD A PRODUCT IMAGE:
+             Replace the text inside .image-placeholder with:
+             <img src="YOUR-IMAGE-URL-HERE" alt="Pods n Salts Nic salt 60ml">
+        -->
+        <div class="image-placeholder"><span>ADD IMAGE</span></div>
+        <div class="card-body">
+          <div class="category">Other</div>
+          <h3>Pods n Salts Nic salt 60ml</h3>
+          <div class="price">R250</div>
+          <div class="options"><strong>Options:</strong> Fresh mint • RY4</div>
+          <div class="store">Normally carried at Stoomtrein Vapers</div>
+        </div>
+      </article>
+    
+      <article class="card" data-category="Freebase" data-search="polar popz freebase freebase tropical berry • passion fruit pineapple and strawberry • raspberry twist">
+        <!-- TO ADD A PRODUCT IMAGE:
+             Replace the text inside .image-placeholder with:
+             <img src="YOUR-IMAGE-URL-HERE" alt="Polar popz Freebase">
+        -->
+        <div class="image-placeholder"><span>ADD IMAGE</span></div>
+        <div class="card-body">
+          <div class="category">Freebase</div>
+          <h3>Polar popz Freebase</h3>
+          <div class="price">R280</div>
+          <div class="options"><strong>Options:</strong> Tropical berry • Passion fruit pineapple and strawberry • Raspberry twist</div>
+          <div class="store">Normally carried at Stoomtrein Vapers</div>
+        </div>
+      </article>
+    
+      <article class="card" data-category="Other" data-search="punctuation nic/salt other litchi mango • strawberry litchi • blends • mango pineapple">
+        <!-- TO ADD A PRODUCT IMAGE:
+             Replace the text inside .image-placeholder with:
+             <img src="YOUR-IMAGE-URL-HERE" alt="Punctuation Nic/Salt">
+        -->
+        <div class="image-placeholder"><span>ADD IMAGE</span></div>
+        <div class="card-body">
+          <div class="category">Other</div>
+          <h3>Punctuation Nic/Salt</h3>
+          <div class="price">R320</div>
+          <div class="options"><strong>Options:</strong> Litchi Mango • Strawberry Litchi • Blends • Mango Pineapple</div>
+          <div class="store">Normally carried at Stoomtrein Vapers</div>
+        </div>
+      </article>
+    
+      <article class="card" data-category="Coils" data-search="q pod 0.6 ohm coils ">
+        <!-- TO ADD A PRODUCT IMAGE:
+             Replace the text inside .image-placeholder with:
+             <img src="YOUR-IMAGE-URL-HERE" alt="Q pod 0.6 ohm">
+        -->
+        <div class="image-placeholder"><span>ADD IMAGE</span></div>
+        <div class="card-body">
+          <div class="category">Coils</div>
+          <h3>Q pod 0.6 ohm</h3>
+          <div class="price">R70</div>
+          
+          <div class="store">Normally carried at Stoomtrein Vapers</div>
+        </div>
+      </article>
+    
+      <article class="card" data-category="Coils" data-search="q pod 0.8 ohm coils ">
+        <!-- TO ADD A PRODUCT IMAGE:
+             Replace the text inside .image-placeholder with:
+             <img src="YOUR-IMAGE-URL-HERE" alt="Q pod 0.8 ohm">
+        -->
+        <div class="image-placeholder"><span>ADD IMAGE</span></div>
+        <div class="card-body">
+          <div class="category">Coils</div>
+          <h3>Q pod 0.8 ohm</h3>
+          <div class="price">R70</div>
+          
+          <div class="store">Normally carried at Stoomtrein Vapers</div>
+        </div>
+      </article>
+    
+      <article class="card" data-category="Other" data-search="rpm 3 coil 0.15 ohm other ">
+        <!-- TO ADD A PRODUCT IMAGE:
+             Replace the text inside .image-placeholder with:
+             <img src="YOUR-IMAGE-URL-HERE" alt="RPM 3 coil 0.15 Ohm">
+        -->
+        <div class="image-placeholder"><span>ADD IMAGE</span></div>
+        <div class="card-body">
+          <div class="category">Other</div>
+          <h3>RPM 3 coil 0.15 Ohm</h3>
+          <div class="price">R70</div>
+          
+          <div class="store">Normally carried at Stoomtrein Vapers</div>
+        </div>
+      </article>
+    
+      <article class="card" data-category="Coils" data-search="rpm2 0.16 ohm coils ">
+        <!-- TO ADD A PRODUCT IMAGE:
+             Replace the text inside .image-placeholder with:
+             <img src="YOUR-IMAGE-URL-HERE" alt="RPM2 0.16 ohm">
+        -->
+        <div class="image-placeholder"><span>ADD IMAGE</span></div>
+        <div class="card-body">
+          <div class="category">Coils</div>
+          <h3>RPM2 0.16 ohm</h3>
+          <div class="price">R70</div>
+          
+          <div class="store">Normally carried at Stoomtrein Vapers</div>
+        </div>
+      </article>
+    
+      <article class="card" data-category="Coils" data-search="rpm2 0.23 ohm coils ">
+        <!-- TO ADD A PRODUCT IMAGE:
+             Replace the text inside .image-placeholder with:
+             <img src="YOUR-IMAGE-URL-HERE" alt="RPM2 0.23 ohm">
+        -->
+        <div class="image-placeholder"><span>ADD IMAGE</span></div>
+        <div class="card-body">
+          <div class="category">Coils</div>
+          <h3>RPM2 0.23 ohm</h3>
+          <div class="price">R70</div>
+          
+          <div class="store">Normally carried at Stoomtrein Vapers</div>
+        </div>
+      </article>
+    
+      <article class="card" data-category="Other" data-search="smok airpen other grey • red • blue • black">
+        <!-- TO ADD A PRODUCT IMAGE:
+             Replace the text inside .image-placeholder with:
+             <img src="YOUR-IMAGE-URL-HERE" alt="SMOK Airpen">
+        -->
+        <div class="image-placeholder"><span>ADD IMAGE</span></div>
+        <div class="card-body">
+          <div class="category">Other</div>
+          <h3>SMOK Airpen</h3>
+          <div class="price">R260</div>
+          <div class="options"><strong>Options:</strong> Grey • Red • Blue • Black</div>
+          <div class="store">Normally carried at Stoomtrein Vapers</div>
+        </div>
+      </article>
+    
+      <article class="card" data-category="Other" data-search="sqrt nic salt other kiwi strawberry • dragonfruit blueberry banana">
+        <!-- TO ADD A PRODUCT IMAGE:
+             Replace the text inside .image-placeholder with:
+             <img src="YOUR-IMAGE-URL-HERE" alt="SQRT nic salt">
+        -->
+        <div class="image-placeholder"><span>ADD IMAGE</span></div>
+        <div class="card-body">
+          <div class="category">Other</div>
+          <h3>SQRT nic salt</h3>
+          <div class="price">R230</div>
+          <div class="options"><strong>Options:</strong> Kiwi strawberry • Dragonfruit blueberry banana</div>
+          <div class="store">Normally carried at Stoomtrein Vapers</div>
+        </div>
+      </article>
+    
+      <article class="card" data-category="Other" data-search="sherrifs custard other ">
+        <!-- TO ADD A PRODUCT IMAGE:
+             Replace the text inside .image-placeholder with:
+             <img src="YOUR-IMAGE-URL-HERE" alt="Sherrifs custard">
+        -->
+        <div class="image-placeholder"><span>ADD IMAGE</span></div>
+        <div class="card-body">
+          <div class="category">Other</div>
+          <h3>Sherrifs custard</h3>
+          <div class="price">R200</div>
+          
+          <div class="store">Normally carried at Stoomtrein Vapers</div>
+        </div>
+      </article>
+    
+      <article class="card" data-category="Other" data-search="shots of salt nic salt other mango grape ice • blackcurrant popsicle • guava passionfruit orange • creamy custard • mango tropicalfruit">
+        <!-- TO ADD A PRODUCT IMAGE:
+             Replace the text inside .image-placeholder with:
+             <img src="YOUR-IMAGE-URL-HERE" alt="Shots of salt nic salt">
+        -->
+        <div class="image-placeholder"><span>ADD IMAGE</span></div>
+        <div class="card-body">
+          <div class="category">Other</div>
+          <h3>Shots of salt nic salt</h3>
+          <div class="price">R220</div>
+          <div class="options"><strong>Options:</strong> Mango grape ice • Blackcurrant popsicle • Guava passionfruit orange • Creamy custard • Mango tropicalfruit</div>
+          <div class="store">Normally carried at Stoomtrein Vapers</div>
+        </div>
+      </article>
+    
+      <article class="card" data-category="Other" data-search="sippin other purple rain • zest rush • glacier • twisted • sunrise">
+        <!-- TO ADD A PRODUCT IMAGE:
+             Replace the text inside .image-placeholder with:
+             <img src="YOUR-IMAGE-URL-HERE" alt="Sippin">
+        -->
+        <div class="image-placeholder"><span>ADD IMAGE</span></div>
+        <div class="card-body">
+          <div class="category">Other</div>
+          <h3>Sippin</h3>
+          <div class="price">R300</div>
+          <div class="options"><strong>Options:</strong> Purple Rain • Zest Rush • Glacier • Twisted • Sunrise</div>
+          <div class="store">Normally carried at Stoomtrein Vapers</div>
+        </div>
+      </article>
+    
+      <article class="card" data-category="Other" data-search="sliced nic salt juice other glacier raspberry • blizzard pineapple • chiller cherryberry • tropical freeze • frostbite grape">
+        <!-- TO ADD A PRODUCT IMAGE:
+             Replace the text inside .image-placeholder with:
+             <img src="YOUR-IMAGE-URL-HERE" alt="Sliced nic salt juice">
+        -->
+        <div class="image-placeholder"><span>ADD IMAGE</span></div>
+        <div class="card-body">
+          <div class="category">Other</div>
+          <h3>Sliced nic salt juice</h3>
+          <div class="price">R230</div>
+          <div class="options"><strong>Options:</strong> Glacier raspberry • Blizzard pineapple • Chiller cherryberry • Tropical freeze • Frostbite grape</div>
+          <div class="store">Normally carried at Stoomtrein Vapers</div>
+        </div>
+      </article>
+    
+      <article class="card" data-category="Other" data-search="slushee nic salt other pineapple slush • summer berry slush • blue raspberry slush • grape slush • deez icy mango slush • cherry slush">
+        <!-- TO ADD A PRODUCT IMAGE:
+             Replace the text inside .image-placeholder with:
+             <img src="YOUR-IMAGE-URL-HERE" alt="Slushee nic salt">
+        -->
+        <div class="image-placeholder"><span>ADD IMAGE</span></div>
+        <div class="card-body">
+          <div class="category">Other</div>
+          <h3>Slushee nic salt</h3>
+          <div class="price">R270</div>
+          <div class="options"><strong>Options:</strong> Pineapple slush • Summer berry slush • Blue raspberry slush • Grape slush • Deez icy mango slush • Cherry slush</div>
+          <div class="store">Normally carried at Stoomtrein Vapers</div>
+        </div>
+      </article>
+    
+      <article class="card" data-category="Coils" data-search="smart 0.4 ohm coils ">
+        <!-- TO ADD A PRODUCT IMAGE:
+             Replace the text inside .image-placeholder with:
+             <img src="YOUR-IMAGE-URL-HERE" alt="Smart 0.4 ohm">
+        -->
+        <div class="image-placeholder"><span>ADD IMAGE</span></div>
+        <div class="card-body">
+          <div class="category">Coils</div>
+          <h3>Smart 0.4 ohm</h3>
+          <div class="price">R70</div>
+          
+          <div class="store">Normally carried at Stoomtrein Vapers</div>
+        </div>
+      </article>
+    
+      <article class="card" data-category="Coils" data-search="smart 0.6 ohm coils ">
+        <!-- TO ADD A PRODUCT IMAGE:
+             Replace the text inside .image-placeholder with:
+             <img src="YOUR-IMAGE-URL-HERE" alt="Smart 0.6 ohm">
+        -->
+        <div class="image-placeholder"><span>ADD IMAGE</span></div>
+        <div class="card-body">
+          <div class="category">Coils</div>
+          <h3>Smart 0.6 ohm</h3>
+          <div class="price">R70</div>
+          
+          <div class="store">Normally carried at Stoomtrein Vapers</div>
+        </div>
+      </article>
+    
+      <article class="card" data-category="Coils" data-search="smart 0.8 ohm coils ">
+        <!-- TO ADD A PRODUCT IMAGE:
+             Replace the text inside .image-placeholder with:
+             <img src="YOUR-IMAGE-URL-HERE" alt="Smart 0.8 ohm">
+        -->
+        <div class="image-placeholder"><span>ADD IMAGE</span></div>
+        <div class="card-body">
+          <div class="category">Coils</div>
+          <h3>Smart 0.8 ohm</h3>
+          <div class="price">R70</div>
+          
+          <div class="store">Normally carried at Stoomtrein Vapers</div>
+        </div>
+      </article>
+    
+      <article class="card" data-category="Other" data-search="smok arco 0.6ohm other ">
+        <!-- TO ADD A PRODUCT IMAGE:
+             Replace the text inside .image-placeholder with:
+             <img src="YOUR-IMAGE-URL-HERE" alt="Smok Arco 0.6Ohm">
+        -->
+        <div class="image-placeholder"><span>ADD IMAGE</span></div>
+        <div class="card-body">
+          <div class="category">Other</div>
+          <h3>Smok Arco 0.6Ohm</h3>
+          <div class="price">R70</div>
+          
+          <div class="store">Normally carried at Stoomtrein Vapers</div>
+        </div>
+      </article>
+    
+      <article class="card" data-category="Other" data-search="smok arco 0.8 other ">
+        <!-- TO ADD A PRODUCT IMAGE:
+             Replace the text inside .image-placeholder with:
+             <img src="YOUR-IMAGE-URL-HERE" alt="Smok Arco 0.8">
+        -->
+        <div class="image-placeholder"><span>ADD IMAGE</span></div>
+        <div class="card-body">
+          <div class="category">Other</div>
+          <h3>Smok Arco 0.8</h3>
+          <div class="price">R70</div>
+          
+          <div class="store">Normally carried at Stoomtrein Vapers</div>
+        </div>
+      </article>
+    
+      <article class="card" data-category="Other" data-search="smok novo eco other pale gold • orange • purple • pink • pale blue • silver • black">
+        <!-- TO ADD A PRODUCT IMAGE:
+             Replace the text inside .image-placeholder with:
+             <img src="YOUR-IMAGE-URL-HERE" alt="Smok Novo Eco">
+        -->
+        <div class="image-placeholder"><span>ADD IMAGE</span></div>
+        <div class="card-body">
+          <div class="category">Other</div>
+          <h3>Smok Novo Eco</h3>
+          <div class="price">R250</div>
+          <div class="options"><strong>Options:</strong> Pale Gold • Orange • Purple • Pink • Pale Blue • Silver • Black</div>
+          <div class="store">Normally carried at Stoomtrein Vapers</div>
+        </div>
+      </article>
+    
+      <article class="card" data-category="Other" data-search="smok rpm 4 0.15 other ">
+        <!-- TO ADD A PRODUCT IMAGE:
+             Replace the text inside .image-placeholder with:
+             <img src="YOUR-IMAGE-URL-HERE" alt="Smok RPM 4 0.15">
+        -->
+        <div class="image-placeholder"><span>ADD IMAGE</span></div>
+        <div class="card-body">
+          <div class="category">Other</div>
+          <h3>Smok RPM 4 0.15</h3>
+          <div class="price">R70</div>
+          
+          <div class="store">Normally carried at Stoomtrein Vapers</div>
+        </div>
+      </article>
+    
+      <article class="card" data-category="Other" data-search="smok rpm 4 0.6ohm other ">
+        <!-- TO ADD A PRODUCT IMAGE:
+             Replace the text inside .image-placeholder with:
+             <img src="YOUR-IMAGE-URL-HERE" alt="Smok Rpm 4 0.6ohm">
+        -->
+        <div class="image-placeholder"><span>ADD IMAGE</span></div>
+        <div class="card-body">
+          <div class="category">Other</div>
+          <h3>Smok Rpm 4 0.6ohm</h3>
+          <div class="price">R70</div>
+          
+          <div class="store">Normally carried at Stoomtrein Vapers</div>
+        </div>
+      </article>
+    
+      <article class="card" data-category="Other" data-search="smok nord 6 other black • gray • white • brown">
+        <!-- TO ADD A PRODUCT IMAGE:
+             Replace the text inside .image-placeholder with:
+             <img src="YOUR-IMAGE-URL-HERE" alt="Smok nord 6">
+        -->
+        <div class="image-placeholder"><span>ADD IMAGE</span></div>
+        <div class="card-body">
+          <div class="category">Other</div>
+          <h3>Smok nord 6</h3>
+          <div class="price">R650</div>
+          <div class="options"><strong>Options:</strong> Black • Gray • White • Brown</div>
+          <div class="store">Normally carried at Stoomtrein Vapers</div>
+        </div>
+      </article>
+    
+      <article class="card" data-category="Coils" data-search="smok novo pod coils ">
+        <!-- TO ADD A PRODUCT IMAGE:
+             Replace the text inside .image-placeholder with:
+             <img src="YOUR-IMAGE-URL-HERE" alt="Smok novo pod">
+        -->
+        <div class="image-placeholder"><span>ADD IMAGE</span></div>
+        <div class="card-body">
+          <div class="category">Coils</div>
+          <h3>Smok novo pod</h3>
+          <div class="price">R70</div>
+          
+          <div class="store">Normally carried at Stoomtrein Vapers</div>
+        </div>
+      </article>
+    
+      <article class="card" data-category="Freebase" data-search="snow cone freebase freebase summer time • tigers blood">
+        <!-- TO ADD A PRODUCT IMAGE:
+             Replace the text inside .image-placeholder with:
+             <img src="YOUR-IMAGE-URL-HERE" alt="Snow cone Freebase">
+        -->
+        <div class="image-placeholder"><span>ADD IMAGE</span></div>
+        <div class="card-body">
+          <div class="category">Freebase</div>
+          <h3>Snow cone Freebase</h3>
+          <div class="price">R340</div>
+          <div class="options"><strong>Options:</strong> Summer time • Tigers blood</div>
+          <div class="store">Normally carried at Stoomtrein Vapers</div>
+        </div>
+      </article>
+    
+      <article class="card" data-category="Other" data-search="solus coil 0.9 ohm other ">
+        <!-- TO ADD A PRODUCT IMAGE:
+             Replace the text inside .image-placeholder with:
+             <img src="YOUR-IMAGE-URL-HERE" alt="Solus coil 0.9 Ohm">
+        -->
+        <div class="image-placeholder"><span>ADD IMAGE</span></div>
+        <div class="card-body">
+          <div class="category">Other</div>
+          <h3>Solus coil 0.9 Ohm</h3>
+          <div class="price">R70</div>
+          
+          <div class="store">Normally carried at Stoomtrein Vapers</div>
+        </div>
+      </article>
+    
+      <article class="card" data-category="Other" data-search="sprite other ">
+        <!-- TO ADD A PRODUCT IMAGE:
+             Replace the text inside .image-placeholder with:
+             <img src="YOUR-IMAGE-URL-HERE" alt="Sprite">
+        -->
+        <div class="image-placeholder"><span>ADD IMAGE</span></div>
+        <div class="card-body">
+          <div class="category">Other</div>
+          <h3>Sprite</h3>
+          <div class="price">R10</div>
+          
+          <div class="store">Normally carried at Stoomtrein Vapers</div>
+        </div>
+      </article>
+    
+      <article class="card" data-category="Other" data-search="t shirts other ">
+        <!-- TO ADD A PRODUCT IMAGE:
+             Replace the text inside .image-placeholder with:
+             <img src="YOUR-IMAGE-URL-HERE" alt="T shirts">
+        -->
+        <div class="image-placeholder"><span>ADD IMAGE</span></div>
+        <div class="card-body">
+          <div class="category">Other</div>
+          <h3>T shirts</h3>
+          <div class="price">R250</div>
+          
+          <div class="store">Normally carried at Stoomtrein Vapers</div>
+        </div>
+      </article>
+    
+      <article class="card" data-category="Other" data-search="tko nic salt other mango ice • blue milk • strawberry milk • grape gum • 18 karat • me time • coffee time • classic tobacco • brandy and cola • cherry • strawberry • lychee • menthol mint">
+        <!-- TO ADD A PRODUCT IMAGE:
+             Replace the text inside .image-placeholder with:
+             <img src="YOUR-IMAGE-URL-HERE" alt="Tko nic salt">
+        -->
+        <div class="image-placeholder"><span>ADD IMAGE</span></div>
+        <div class="card-body">
+          <div class="category">Other</div>
+          <h3>Tko nic salt</h3>
+          <div class="price">R180</div>
+          <div class="options"><strong>Options:</strong> Mango Ice • Blue milk • Strawberry milk • Grape gum • 18 karat • Me time • Coffee time • Classic tobacco • Brandy and cola • Cherry • Strawberry • Lychee • Menthol mint</div>
+          <div class="store">Normally carried at Stoomtrein Vapers</div>
+        </div>
+      </article>
+    
+      <article class="card" data-category="Other" data-search="tugboat dimon pro kit other ">
+        <!-- TO ADD A PRODUCT IMAGE:
+             Replace the text inside .image-placeholder with:
+             <img src="YOUR-IMAGE-URL-HERE" alt="Tugboat Dimon pro kit">
+        -->
+        <div class="image-placeholder"><span>ADD IMAGE</span></div>
+        <div class="card-body">
+          <div class="category">Other</div>
+          <h3>Tugboat Dimon pro kit</h3>
+          <div class="price">R500</div>
+          
+          <div class="store">Normally carried at Stoomtrein Vapers</div>
+        </div>
+      </article>
+    
+      <article class="card" data-category="Pod system" data-search="upends switch pods pod system fruit gummmy bear • sweet coffee • banana milkshake • mentos mint • cherry peach lemonade • raspberry peach lemonade • triple mango • cherry ice • pineapple ice • skittles • passion fruit • cranberry grape • banana ice • peach ice">
+        <!-- TO ADD A PRODUCT IMAGE:
+             Replace the text inside .image-placeholder with:
+             <img src="YOUR-IMAGE-URL-HERE" alt="Upends Switch pods">
+        -->
+        <div class="image-placeholder"><span>ADD IMAGE</span></div>
+        <div class="card-body">
+          <div class="category">Pod system</div>
+          <h3>Upends Switch pods</h3>
+          <div class="price">R110</div>
+          <div class="options"><strong>Options:</strong> Fruit gummmy bear • Sweet coffee • Banana milkshake • Mentos mint • Cherry peach lemonade • Raspberry peach lemonade • Triple mango • Cherry ice • Pineapple ice • Skittles • Passion fruit • Cranberry grape • Banana ice • Peach ice</div>
+          <div class="store">Normally carried at Stoomtrein Vapers</div>
+        </div>
+      </article>
+    
+      <article class="card" data-category="Other" data-search="upends switch battery other ">
+        <!-- TO ADD A PRODUCT IMAGE:
+             Replace the text inside .image-placeholder with:
+             <img src="YOUR-IMAGE-URL-HERE" alt="Upends switch battery">
+        -->
+        <div class="image-placeholder"><span>ADD IMAGE</span></div>
+        <div class="card-body">
+          <div class="category">Other</div>
+          <h3>Upends switch battery</h3>
+          <div class="price">R150</div>
+          
+          <div class="store">Normally carried at Stoomtrein Vapers</div>
+        </div>
+      </article>
+    
+      <article class="card" data-category="Other" data-search="vg 80ml other ">
+        <!-- TO ADD A PRODUCT IMAGE:
+             Replace the text inside .image-placeholder with:
+             <img src="YOUR-IMAGE-URL-HERE" alt="VG 80ml">
+        -->
+        <div class="image-placeholder"><span>ADD IMAGE</span></div>
+        <div class="card-body">
+          <div class="category">Other</div>
+          <h3>VG 80ml</h3>
+          <div class="price">R0</div>
+          
+          <div class="store">Normally carried at Stoomtrein Vapers</div>
+        </div>
+      </article>
+    
+      <article class="card" data-category="Coils" data-search="vgod 0.6 ohm coils ">
+        <!-- TO ADD A PRODUCT IMAGE:
+             Replace the text inside .image-placeholder with:
+             <img src="YOUR-IMAGE-URL-HERE" alt="VGOD 0.6 ohm">
+        -->
+        <div class="image-placeholder"><span>ADD IMAGE</span></div>
+        <div class="card-body">
+          <div class="category">Coils</div>
+          <h3>VGOD 0.6 ohm</h3>
+          <div class="price">R70</div>
+          
+          <div class="store">Normally carried at Stoomtrein Vapers</div>
+        </div>
+      </article>
+    
+      <article class="card" data-category="Coils" data-search="vgod 0.8 ohm coils ">
+        <!-- TO ADD A PRODUCT IMAGE:
+             Replace the text inside .image-placeholder with:
+             <img src="YOUR-IMAGE-URL-HERE" alt="VGOD 0.8 ohm">
+        -->
+        <div class="image-placeholder"><span>ADD IMAGE</span></div>
+        <div class="card-body">
+          <div class="category">Coils</div>
+          <h3>VGOD 0.8 ohm</h3>
+          <div class="price">R70</div>
+          
+          <div class="store">Normally carried at Stoomtrein Vapers</div>
+        </div>
+      </article>
+    
+      <article class="card" data-category="Other" data-search="vandy vape wired coils other ">
+        <!-- TO ADD A PRODUCT IMAGE:
+             Replace the text inside .image-placeholder with:
+             <img src="YOUR-IMAGE-URL-HERE" alt="Vandy vape wired coils">
+        -->
+        <div class="image-placeholder"><span>ADD IMAGE</span></div>
+        <div class="card-body">
+          <div class="category">Other</div>
+          <h3>Vandy vape wired coils</h3>
+          <div class="price">R30</div>
+          
+          <div class="store">Normally carried at Stoomtrein Vapers</div>
+        </div>
+      </article>
+    
+      <article class="card" data-category="Other" data-search="vaporesso gtx 0.2 ohm other ">
+        <!-- TO ADD A PRODUCT IMAGE:
+             Replace the text inside .image-placeholder with:
+             <img src="YOUR-IMAGE-URL-HERE" alt="Vaporesso Gtx 0.2 Ohm">
+        -->
+        <div class="image-placeholder"><span>ADD IMAGE</span></div>
+        <div class="card-body">
+          <div class="category">Other</div>
+          <h3>Vaporesso Gtx 0.2 Ohm</h3>
+          <div class="price">R70</div>
+          
+          <div class="store">Normally carried at Stoomtrein Vapers</div>
+        </div>
+      </article>
+    
+      <article class="card" data-category="Other" data-search="vaporesso vibe se other green/blue • blue • black • grey • pink">
+        <!-- TO ADD A PRODUCT IMAGE:
+             Replace the text inside .image-placeholder with:
+             <img src="YOUR-IMAGE-URL-HERE" alt="Vaporesso Vibe SE">
+        -->
+        <div class="image-placeholder"><span>ADD IMAGE</span></div>
+        <div class="card-body">
+          <div class="category">Other</div>
+          <h3>Vaporesso Vibe SE</h3>
+          <div class="price">R280</div>
+          <div class="options"><strong>Options:</strong> Green/blue • Blue • Black • Grey • Pink</div>
+          <div class="store">Normally carried at Stoomtrein Vapers</div>
+        </div>
+      </article>
+    
+      <article class="card" data-category="Other" data-search="vaporesso xros 5 mini other flowing green • flowing blue • pastel crystal • carbon black">
+        <!-- TO ADD A PRODUCT IMAGE:
+             Replace the text inside .image-placeholder with:
+             <img src="YOUR-IMAGE-URL-HERE" alt="Vaporesso Xros 5 mini">
+        -->
+        <div class="image-placeholder"><span>ADD IMAGE</span></div>
+        <div class="card-body">
+          <div class="category">Other</div>
+          <h3>Vaporesso Xros 5 mini</h3>
+          <div class="price">R500</div>
+          <div class="options"><strong>Options:</strong> Flowing green • Flowing blue • Pastel crystal • Carbon black</div>
+          <div class="store">Normally carried at Stoomtrein Vapers</div>
+        </div>
+      </article>
+    
+      <article class="card" data-category="Other" data-search="vaporesso eco nano other grey • night dark • purple • blue">
+        <!-- TO ADD A PRODUCT IMAGE:
+             Replace the text inside .image-placeholder with:
+             <img src="YOUR-IMAGE-URL-HERE" alt="Vaporesso eco nano">
+        -->
+        <div class="image-placeholder"><span>ADD IMAGE</span></div>
+        <div class="card-body">
+          <div class="category">Other</div>
+          <h3>Vaporesso eco nano</h3>
+          <div class="price">R300</div>
+          <div class="options"><strong>Options:</strong> Grey • Night dark • Purple • Blue</div>
+          <div class="store">Normally carried at Stoomtrein Vapers</div>
+        </div>
+      </article>
+    
+      <article class="card" data-category="Other" data-search="vaporesso vibe other black • grey">
+        <!-- TO ADD A PRODUCT IMAGE:
+             Replace the text inside .image-placeholder with:
+             <img src="YOUR-IMAGE-URL-HERE" alt="Vaporesso vibe">
+        -->
+        <div class="image-placeholder"><span>ADD IMAGE</span></div>
+        <div class="card-body">
+          <div class="category">Other</div>
+          <h3>Vaporesso vibe</h3>
+          <div class="price">R450</div>
+          <div class="options"><strong>Options:</strong> Black • Grey</div>
+          <div class="store">Normally carried at Stoomtrein Vapers</div>
+        </div>
+      </article>
+    
+      <article class="card" data-category="Other" data-search="vaporesso xros 5 other blue silk • carbon stripe • cosmic black">
+        <!-- TO ADD A PRODUCT IMAGE:
+             Replace the text inside .image-placeholder with:
+             <img src="YOUR-IMAGE-URL-HERE" alt="Vaporesso xros 5">
+        -->
+        <div class="image-placeholder"><span>ADD IMAGE</span></div>
+        <div class="card-body">
+          <div class="category">Other</div>
+          <h3>Vaporesso xros 5</h3>
+          <div class="price">R600</div>
+          <div class="options"><strong>Options:</strong> Blue silk • Carbon stripe • Cosmic black</div>
+          <div class="store">Normally carried at Stoomtrein Vapers</div>
+        </div>
+      </article>
+    
+      <article class="card" data-category="Other" data-search="vibe se pod system other grey leather • black leather">
+        <!-- TO ADD A PRODUCT IMAGE:
+             Replace the text inside .image-placeholder with:
+             <img src="YOUR-IMAGE-URL-HERE" alt="Vibe SE Pod system">
+        -->
+        <div class="image-placeholder"><span>ADD IMAGE</span></div>
+        <div class="card-body">
+          <div class="category">Other</div>
+          <h3>Vibe SE Pod system</h3>
+          <div class="price">R250</div>
+          <div class="options"><strong>Options:</strong> Grey Leather • Black Leather</div>
+          <div class="store">Normally carried at Stoomtrein Vapers</div>
+        </div>
+      </article>
+    
+      <article class="card" data-category="Other" data-search="vibe coils 0.6/0.8 other ">
+        <!-- TO ADD A PRODUCT IMAGE:
+             Replace the text inside .image-placeholder with:
+             <img src="YOUR-IMAGE-URL-HERE" alt="Vibe coils 0.6/0.8">
+        -->
+        <div class="image-placeholder"><span>ADD IMAGE</span></div>
+        <div class="card-body">
+          <div class="category">Other</div>
+          <h3>Vibe coils 0.6/0.8</h3>
+          <div class="price">R70</div>
+          
+          <div class="store">Normally carried at Stoomtrein Vapers</div>
+        </div>
+      </article>
+    
+      <article class="card" data-category="Other" data-search="voopoo argus coils other ">
+        <!-- TO ADD A PRODUCT IMAGE:
+             Replace the text inside .image-placeholder with:
+             <img src="YOUR-IMAGE-URL-HERE" alt="Voopoo Argus coils">
+        -->
+        <div class="image-placeholder"><span>ADD IMAGE</span></div>
+        <div class="card-body">
+          <div class="category">Other</div>
+          <h3>Voopoo Argus coils</h3>
+          <div class="price">R70</div>
+          
+          <div class="store">Normally carried at Stoomtrein Vapers</div>
+        </div>
+      </article>
+    
+      <article class="card" data-category="Other" data-search="voopoo drag 5 kit other green • pink • black">
+        <!-- TO ADD A PRODUCT IMAGE:
+             Replace the text inside .image-placeholder with:
+             <img src="YOUR-IMAGE-URL-HERE" alt="Voopoo drag 5 kit">
+        -->
+        <div class="image-placeholder"><span>ADD IMAGE</span></div>
+        <div class="card-body">
+          <div class="category">Other</div>
+          <h3>Voopoo drag 5 kit</h3>
+          <div class="price">R1,450</div>
+          <div class="options"><strong>Options:</strong> Green • Pink • Black</div>
+          <div class="store">Normally carried at Stoomtrein Vapers</div>
+        </div>
+      </article>
+    
+      <article class="card" data-category="Other" data-search="water other ">
+        <!-- TO ADD A PRODUCT IMAGE:
+             Replace the text inside .image-placeholder with:
+             <img src="YOUR-IMAGE-URL-HERE" alt="Water">
+        -->
+        <div class="image-placeholder"><span>ADD IMAGE</span></div>
+        <div class="card-body">
+          <div class="category">Other</div>
+          <h3>Water</h3>
+          <div class="price">R10</div>
+          
+          <div class="store">Normally carried at Stoomtrein Vapers</div>
+        </div>
+      </article>
+    
+      <article class="card" data-category="Coils" data-search="xros 0.4 ohm coils ">
+        <!-- TO ADD A PRODUCT IMAGE:
+             Replace the text inside .image-placeholder with:
+             <img src="YOUR-IMAGE-URL-HERE" alt="Xros 0.4 ohm">
+        -->
+        <div class="image-placeholder"><span>ADD IMAGE</span></div>
+        <div class="card-body">
+          <div class="category">Coils</div>
+          <h3>Xros 0.4 ohm</h3>
+          <div class="price">R70</div>
+          
+          <div class="store">Normally carried at Stoomtrein Vapers</div>
+        </div>
+      </article>
+    
+      <article class="card" data-category="Coils" data-search="xros 0.6 ohm coils ">
+        <!-- TO ADD A PRODUCT IMAGE:
+             Replace the text inside .image-placeholder with:
+             <img src="YOUR-IMAGE-URL-HERE" alt="Xros 0.6 ohm">
+        -->
+        <div class="image-placeholder"><span>ADD IMAGE</span></div>
+        <div class="card-body">
+          <div class="category">Coils</div>
+          <h3>Xros 0.6 ohm</h3>
+          <div class="price">R70</div>
+          
+          <div class="store">Normally carried at Stoomtrein Vapers</div>
+        </div>
+      </article>
+    
+      <article class="card" data-category="Coils" data-search="xros 0.8 ohm coils ">
+        <!-- TO ADD A PRODUCT IMAGE:
+             Replace the text inside .image-placeholder with:
+             <img src="YOUR-IMAGE-URL-HERE" alt="Xros 0.8 ohm">
+        -->
+        <div class="image-placeholder"><span>ADD IMAGE</span></div>
+        <div class="card-body">
+          <div class="category">Coils</div>
+          <h3>Xros 0.8 ohm</h3>
+          <div class="price">R70</div>
+          
+          <div class="store">Normally carried at Stoomtrein Vapers</div>
+        </div>
+      </article>
+    
+      <article class="card" data-category="Other" data-search="yeti 60ml longfill other sour grape ice • apricot &amp; watermelon ice • honeydew blackcurrant ice • pineapple ice • mango ice">
+        <!-- TO ADD A PRODUCT IMAGE:
+             Replace the text inside .image-placeholder with:
+             <img src="YOUR-IMAGE-URL-HERE" alt="Yeti 60ml Longfill">
+        -->
+        <div class="image-placeholder"><span>ADD IMAGE</span></div>
+        <div class="card-body">
+          <div class="category">Other</div>
+          <h3>Yeti 60ml Longfill</h3>
+          <div class="price">R320</div>
+          <div class="options"><strong>Options:</strong> Sour Grape ice • Apricot &amp; watermelon ice • Honeydew Blackcurrant ice • Pineapple Ice • Mango Ice</div>
+          <div class="store">Normally carried at Stoomtrein Vapers</div>
+        </div>
+      </article>
+    
+      <article class="card" data-category="Other" data-search="z coils other ">
+        <!-- TO ADD A PRODUCT IMAGE:
+             Replace the text inside .image-placeholder with:
+             <img src="YOUR-IMAGE-URL-HERE" alt="Z coils">
+        -->
+        <div class="image-placeholder"><span>ADD IMAGE</span></div>
+        <div class="card-body">
+          <div class="category">Other</div>
+          <h3>Z coils</h3>
+          <div class="price">R70</div>
+          
+          <div class="store">Normally carried at Stoomtrein Vapers</div>
+        </div>
+      </article>
+    
+      <article class="card" data-category="Pod system" data-search="z land 12k flavor pod system strawberry • watermelon • blueberry • hazlenut • pineapple • grape • mango • banana • cotton candy • cherry • tabacco • guava • coffee • lime • peach • lychee • raspberry • menthol">
+        <!-- TO ADD A PRODUCT IMAGE:
+             Replace the text inside .image-placeholder with:
+             <img src="YOUR-IMAGE-URL-HERE" alt="Z land 12k flavor">
+        -->
+        <div class="image-placeholder"><span>ADD IMAGE</span></div>
+        <div class="card-body">
+          <div class="category">Pod system</div>
+          <h3>Z land 12k flavor</h3>
+          <div class="price">R160</div>
+          <div class="options"><strong>Options:</strong> Strawberry • Watermelon • Blueberry • Hazlenut • Pineapple • Grape • Mango • Banana • Cotton candy • Cherry • Tabacco • Guava • Coffee • Lime • Peach • Lychee • Raspberry • Menthol</div>
+          <div class="store">Normally carried at Stoomtrein Vapers</div>
+        </div>
+      </article>
+    
+      <article class="card" data-category="Pod system" data-search="z land battery pod system ">
+        <!-- TO ADD A PRODUCT IMAGE:
+             Replace the text inside .image-placeholder with:
+             <img src="YOUR-IMAGE-URL-HERE" alt="Z land battery">
+        -->
+        <div class="image-placeholder"><span>ADD IMAGE</span></div>
+        <div class="card-body">
+          <div class="category">Pod system</div>
+          <h3>Z land battery</h3>
+          <div class="price">R100</div>
+          
+          <div class="store">Normally carried at Stoomtrein Vapers</div>
+        </div>
+      </article>
+    
+      <article class="card" data-category="Other" data-search="z land mini battery other ">
+        <!-- TO ADD A PRODUCT IMAGE:
+             Replace the text inside .image-placeholder with:
+             <img src="YOUR-IMAGE-URL-HERE" alt="Z land mini Battery">
+        -->
+        <div class="image-placeholder"><span>ADD IMAGE</span></div>
+        <div class="card-body">
+          <div class="category">Other</div>
+          <h3>Z land mini Battery</h3>
+          <div class="price">R30</div>
+          
+          <div class="store">Normally carried at Stoomtrein Vapers</div>
+        </div>
+      </article>
+    
+      <article class="card" data-category="Other" data-search="z land mini flavors other grape • cotton candy • coffee • cherry • watermelon • blueberry • vanilla • strawberry • raspberry • pineapple • peach • passion fruit • berry mix • mango • lychee • kiwi • hazelnut • gum">
+        <!-- TO ADD A PRODUCT IMAGE:
+             Replace the text inside .image-placeholder with:
+             <img src="YOUR-IMAGE-URL-HERE" alt="Z land mini flavors">
+        -->
+        <div class="image-placeholder"><span>ADD IMAGE</span></div>
+        <div class="card-body">
+          <div class="category">Other</div>
+          <h3>Z land mini flavors</h3>
+          <div class="price">R20</div>
+          <div class="options"><strong>Options:</strong> Grape • Cotton Candy • Coffee • Cherry • Watermelon • Blueberry • Vanilla • Strawberry • Raspberry • Pineapple • Peach • Passion fruit • Berry mix • Mango • Lychee • kiwi • Hazelnut • Gum</div>
+          <div class="store">Normally carried at Stoomtrein Vapers</div>
+        </div>
+      </article>
+    
+      <article class="card" data-category="Coils" data-search="tugboat coil 0.6 ohm coils ">
+        <!-- TO ADD A PRODUCT IMAGE:
+             Replace the text inside .image-placeholder with:
+             <img src="YOUR-IMAGE-URL-HERE" alt="tugboat coil 0.6 ohm">
+        -->
+        <div class="image-placeholder"><span>ADD IMAGE</span></div>
+        <div class="card-body">
+          <div class="category">Coils</div>
+          <h3>tugboat coil 0.6 ohm</h3>
+          <div class="price">R70</div>
+          
+          <div class="store">Normally carried at Stoomtrein Vapers</div>
+        </div>
+      </article>
+    </main>
+<div class="empty" id="empty">No products found. Try another search or category.</div>
+
+<p class="note">Product selection and prices are based on our catalogue. Availability can change, so please contact Stoomtrein Vapers if you are looking for a specific item.</p>
+</div>
+
+<script>
+document.getElementById("storeName").textContent=STORE_NAME;
+document.getElementById("headerTitle").textContent=HEADER_TITLE;
+document.getElementById("headerSubtitle").textContent=HEADER_SUBTITLE;
+
+const cards=[...document.querySelectorAll(".card")];
+const search=document.getElementById("search");
+const category=document.getElementById("category");
+const count=document.getElementById("count");
+const empty=document.getElementById("empty");
+
+function filterCards(){
+  const q=search.value.toLowerCase().trim(), cat=category.value;
+  let shown=0;
+  cards.forEach(card=>{
+    const show=(!q||card.dataset.search.includes(q))&&(cat==="all"||card.dataset.category===cat);
+    card.style.display=show?"":"none";
+    if(show)shown++;
+  });
+  count.textContent=shown+" product"+(shown===1?"":"s")+" shown";
+  empty.style.display=shown?"none":"block";
+}
+search.addEventListener("input",filterCards);
+category.addEventListener("change",filterCards);
+filterCards();
+</script>
+</body>
+</html>
